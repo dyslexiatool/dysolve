@@ -130,16 +130,26 @@ function AppInner() {
     setView('reader')
   }
 
-  // Follow TTS — scroll current word into view and move focus strip to match
+  // Follow TTS — move focus strip with each word; only scroll when word nears the viewport edge.
+  // Scrolling on every word cancels the previous smooth animation (words fire every ~300ms)
+  // so we let the strip track the word freely and only scroll when it's about to go off-screen.
   useEffect(() => {
     if (!followTTS || ttsState.currentWordIndex == null) return
     const el = document.querySelector(`[data-word-index="${ttsState.currentWordIndex}"]`)
     if (!el) return
-    // Always scroll the word to the centre of the viewport
-    el.scrollIntoView({ block: 'center', behavior: 'smooth' })
-    // If the focus window is on, keep the strip centred (scrollIntoView puts the word at centre)
+    const rect = el.getBoundingClientRect()
+    const vh = window.innerHeight
+    const wordMidY = rect.top + rect.height / 2
+
+    // Move the focus strip to track the current word's real screen position
     if (focusWindow.enabled) {
-      setYPosition(window.innerHeight / 2 - focusWindow.stripHeight / 2)
+      setYPosition(wordMidY - focusWindow.stripHeight / 2)
+    }
+
+    // Scroll only when the word is within 15% of the top or bottom edge
+    const margin = vh * 0.15
+    if (rect.top < margin || rect.bottom > vh - margin) {
+      el.scrollIntoView({ block: 'center', behavior: 'smooth' })
     }
   }, [ttsState.currentWordIndex, followTTS, focusWindow.enabled, focusWindow.stripHeight, setYPosition])
 
