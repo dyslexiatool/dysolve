@@ -1,7 +1,7 @@
 import type { Translations } from '../types'
 
 export const zhTW: Translations = {
-  langName: '中文（繁體）', ocrLang: 'chi_tra', ttsLangCode: 'zh',
+  langName: '中文（繁體）', ocrLang: 'chi_tra', ttsLangCode: 'zh-TW',
 
   nav: { screening: '篩查測試', resources: '資源', loadText: '載入新文字', tagline: '閱讀障礙友善閱讀器', lightMode: '淺色模式', darkMode: '深色模式', preferencesBtn: '偏好設定', allTests: '全部測試' },
 

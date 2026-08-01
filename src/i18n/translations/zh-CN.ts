@@ -1,7 +1,7 @@
 import type { Translations } from '../types'
 
 export const zhCN: Translations = {
-  langName: '中文（简体）', ocrLang: 'chi_sim', ttsLangCode: 'zh',
+  langName: '中文（简体）', ocrLang: 'chi_sim', ttsLangCode: 'zh-CN',
 
   nav: { screening: '筛查测试', resources: '资源', loadText: '加载新文本', tagline: '阅读障碍友好阅读器', lightMode: '浅色模式', darkMode: '深色模式', preferencesBtn: '首选项', allTests: '全部测试' },
 

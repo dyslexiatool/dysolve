@@ -17,7 +17,7 @@ export type DefinitionState =
 
 // Map language code → MyMemory BCP-47 tag
 const MYMEMORY_LANG: Record<string, string> = {
-  en: 'en-US', zh: 'zh-CN', es: 'es-ES', fr: 'fr-FR',
+  en: 'en-US', zh: 'zh-CN', 'zh-CN': 'zh-CN', 'zh-TW': 'zh-TW', es: 'es-ES', fr: 'fr-FR',
   de: 'de-DE', it: 'it-IT', ja: 'ja-JP', ko: 'ko-KR', ru: 'ru-RU',
   ar: 'ar',     pt: 'pt-BR', hi: 'hi',    tr: 'tr',
   nl: 'nl',     pl: 'pl',    vi: 'vi',    th: 'th',
@@ -36,7 +36,8 @@ const MYMEMORY_LANG: Record<string, string> = {
 
 export const LANG_NAMES: Record<string, string> = {
   // App languages
-  en: 'English',     zh: 'Chinese',    es: 'Spanish',    fr: 'French',
+  en: 'English',     zh: 'Chinese',    'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Traditional)',
+  es: 'Spanish',    fr: 'French',
   de: 'German',      it: 'Italian',    ja: 'Japanese',   ko: 'Korean',
   ru: 'Russian',
   // Major world languages

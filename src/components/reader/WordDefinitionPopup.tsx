@@ -4,17 +4,25 @@ import { useLanguage } from '../../i18n'
 import { LANGUAGES } from '../../i18n/languages'
 
 // Derive app language codes from the LANGUAGES registry (all 20 languages)
-const APP_LANG_CODES = [...new Set(LANGUAGES.map((l) => l.ttsLang))].filter(
-  (code) => code in LANG_NAMES
-)
+// Use language codes (e.g. 'zh-CN', 'zh-TW') not ttsLang prefixes so both Chinese
+// variants appear as distinct entries and map correctly through MYMEMORY_LANG.
+const APP_LANG_CODES = LANGUAGES.map((l) => l.code).filter((code) => code in LANG_NAMES)
+
+// Full BCP-47 locale fallbacks for languages that may have no installed voice
+const LANG_LOCALE: Record<string, string> = {
+  en: 'en-US', 'zh-CN': 'zh-CN', 'zh-TW': 'zh-TW', zh: 'zh-CN',
+  es: 'es-ES', fr: 'fr-FR', de: 'de-DE', it: 'it-IT', ja: 'ja-JP',
+  ko: 'ko-KR', ru: 'ru-RU', pt: 'pt-BR', hi: 'hi-IN', tr: 'tr-TR',
+  nl: 'nl-NL', pl: 'pl-PL', vi: 'vi-VN', id: 'id-ID', uk: 'uk-UA',
+  el: 'el-GR', sv: 'sv-SE',
+}
 
 function speakWord(text: string, langCode: string) {
   const u = new SpeechSynthesisUtterance(text)
-  // Use the full language code if available, otherwise the short prefix
-  u.lang = langCode
+  const prefix = langCode.split('-')[0].toLowerCase()
+  u.lang = LANG_LOCALE[langCode] ?? langCode
   u.rate = 0.75
   u.pitch = 1.0
-  const prefix = langCode.split('-')[0].toLowerCase()
   const voices = window.speechSynthesis.getVoices()
   const langVoices = voices.filter(v => v.lang.toLowerCase().startsWith(prefix))
   const preferred = langVoices.find(v =>
@@ -22,7 +30,10 @@ function speakWord(text: string, langCode: string) {
     v.name.includes('Natural') || v.name.includes('Premium') ||
     v.name.includes('Samantha') || v.name.includes('Daniel')
   ) ?? langVoices.find(v => v.localService) ?? langVoices[0] ?? null
-  if (preferred) u.voice = preferred
+  if (preferred) {
+    u.voice = preferred
+    u.lang = preferred.lang  // use the voice's own full locale
+  }
   window.speechSynthesis.cancel()
   window.speechSynthesis.speak(u)
 }
