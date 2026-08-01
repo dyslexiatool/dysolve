@@ -130,14 +130,17 @@ function AppInner() {
     setView('reader')
   }
 
-  // Follow TTS — move focus window to the current spoken word's position
+  // Follow TTS — scroll current word into view and move focus strip to match
   useEffect(() => {
-    if (!followTTS || !focusWindow.enabled || ttsState.currentWordIndex == null) return
+    if (!followTTS || ttsState.currentWordIndex == null) return
     const el = document.querySelector(`[data-word-index="${ttsState.currentWordIndex}"]`)
     if (!el) return
-    const rect = el.getBoundingClientRect()
-    const targetY = rect.top - focusWindow.stripHeight / 2 + rect.height / 2
-    setYPosition(targetY)
+    // Always scroll the word to the centre of the viewport
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    // If the focus window is on, keep the strip centred (scrollIntoView puts the word at centre)
+    if (focusWindow.enabled) {
+      setYPosition(window.innerHeight / 2 - focusWindow.stripHeight / 2)
+    }
   }, [ttsState.currentWordIndex, followTTS, focusWindow.enabled, focusWindow.stripHeight, setYPosition])
 
   function handleToggleBold(index: number, word: string) {

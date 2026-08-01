@@ -16,14 +16,14 @@ const LENGTH_WORDS: Record<SummaryLength, number> = {
 
 const OPENROUTER_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions'
 
-// Try models in order until one succeeds (verified working 2026-07)
+// Try models in order until one succeeds (verified working 2026-08)
 const FREE_MODELS = [
-  'meta-llama/llama-3.3-70b-instruct:free',
-  'nvidia/nemotron-3-ultra-550b-a55b:free',
-  'nvidia/nemotron-3-super-120b-a12b:free',
-  'nousresearch/hermes-3-llama-3.1-405b:free',
-  'google/gemma-4-31b-it:free',
-  'openai/gpt-oss-120b:free',
+  'google/gemma-4-26b-a4b-it:free',       // clean prose summaries
+  'nvidia/nemotron-3-ultra-550b-a55b:free', // clean prose summaries
+  'nvidia/nemotron-nano-12b-v2-vl:free',   // clean prose summaries
+  'nvidia/nemotron-nano-9b-v2:free',       // clean prose summaries
+  'nvidia/nemotron-3-super-120b-a12b:free', // fallback (thinking filtered by cleanOutput)
+  'nvidia/nemotron-3-nano-30b-a3b:free',   // fallback
 ]
 
 const K = atob('c2stb3ItdjEtOTNiNWNiMzliY2U3MzRiYjY0M2NkNjcyNjlhODg1ZjJmN2I0ODc5YzJmYTVhY2QwNjA4YjI5YzEwM2Q1ODA5Mw==')
