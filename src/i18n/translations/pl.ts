@@ -192,6 +192,7 @@ export const pl: Translations = {
     removeBold: 'Usuń pogrubienie', boldWord: 'Pogrub do powtórki',
     collapse: 'Zwiń', expandMore: 'Rozwiń dla więcej miejsca',
     nativeDef: 'definicja',
+    howToSay: 'Jak wymówić:', hearWord: 'Posłuchaj wymowy',
   },
 
   sounds: {

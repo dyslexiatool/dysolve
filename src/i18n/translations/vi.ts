@@ -192,6 +192,7 @@ export const vi: Translations = {
     removeBold: 'Xóa đậm', boldWord: 'In đậm để ôn tập',
     collapse: 'Thu gọn', expandMore: 'Mở rộng để có thêm không gian',
     nativeDef: 'định nghĩa',
+    howToSay: 'Cách phát âm:', hearWord: 'Nghe phát âm',
   },
 
   sounds: {

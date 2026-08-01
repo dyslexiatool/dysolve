@@ -143,6 +143,7 @@ export const zhTW: Translations = {
     removeBold: '取消加粗', boldWord: '加粗以複習',
     collapse: '收起', expandMore: '展開以獲取更多空間',
     nativeDef: '釋義',
+    howToSay: '怎麼讀:', hearWord: '聽發音',
   },
 
   sounds: {

@@ -155,6 +155,7 @@ export const fr: Translations = {
     removeBold: 'Supprimer le gras', boldWord: 'Mettre en gras pour révision',
     collapse: 'Réduire', expandMore: 'Agrandir pour plus d\'espace',
     nativeDef: 'définition',
+    howToSay: 'Comment le prononcer :', hearWord: 'Écouter la prononciation',
   },
 
   sounds: {

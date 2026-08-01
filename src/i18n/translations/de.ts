@@ -155,6 +155,7 @@ export const de: Translations = {
     removeBold: 'Fettschrift entfernen', boldWord: 'Für Wiederholung fetten',
     collapse: 'Einklappen', expandMore: 'Für mehr Platz erweitern',
     nativeDef: 'Definition',
+    howToSay: 'Wie man es ausspricht:', hearWord: 'Aussprache anhören',
   },
 
   sounds: {

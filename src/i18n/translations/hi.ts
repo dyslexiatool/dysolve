@@ -192,6 +192,7 @@ export const hi: Translations = {
     removeBold: 'बोल्ड हटाएं', boldWord: 'समीक्षा के लिए बोल्ड करें',
     collapse: 'संकुचित करें', expandMore: 'अधिक स्थान के लिए विस्तार करें',
     nativeDef: 'परिभाषा',
+    howToSay: 'कैसे कहें:', hearWord: 'उच्चारण सुनें',
   },
 
   sounds: {

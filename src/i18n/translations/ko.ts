@@ -155,6 +155,7 @@ export const ko: Translations = {
     removeBold: '굵게 제거', boldWord: '복습용 굵게',
     collapse: '접기', expandMore: '더 많은 공간으로 확장',
     nativeDef: '정의',
+    howToSay: '발음 방법:', hearWord: '발음 듣기',
   },
 
   sounds: {

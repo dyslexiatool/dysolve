@@ -192,6 +192,7 @@ export const sv: Translations = {
     removeBold: 'Ta bort fetstil', boldWord: 'Fetstil för repetition',
     collapse: 'Dölj', expandMore: 'Expandera för mer utrymme',
     nativeDef: 'definition',
+    howToSay: 'Hur man uttalar:', hearWord: 'Hör uttal',
   },
 
   sounds: {

@@ -192,6 +192,7 @@ export const tr: Translations = {
     removeBold: 'Kalın kaldır', boldWord: 'Tekrar için kalın',
     collapse: 'Daralt', expandMore: 'Daha fazla alan için genişlet',
     nativeDef: 'tanım',
+    howToSay: 'Nasıl söylenir:', hearWord: 'Telaffuzu dinle',
   },
 
   sounds: {

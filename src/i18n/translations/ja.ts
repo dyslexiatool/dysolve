@@ -155,6 +155,7 @@ export const ja: Translations = {
     removeBold: '太字を解除', boldWord: '復習用に太字',
     collapse: '折りたたむ', expandMore: 'スペースを広げる',
     nativeDef: '定義',
+    howToSay: '読み方:', hearWord: '発音を聞く',
   },
 
   sounds: {

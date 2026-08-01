@@ -192,6 +192,7 @@ export const nl: Translations = {
     removeBold: 'Vet verwijderen', boldWord: 'Vet voor herhaling',
     collapse: 'Inklappen', expandMore: 'Uitvouwen voor meer ruimte',
     nativeDef: 'definitie',
+    howToSay: 'Hoe uit te spreken:', hearWord: 'Luister naar uitspraak',
   },
 
   sounds: {

@@ -192,6 +192,7 @@ export const el: Translations = {
     removeBold: 'Αφαίρεση έντονης γραφής', boldWord: 'Έντονη για επανάληψη',
     collapse: 'Σύμπτυξη', expandMore: 'Επέκταση για περισσότερο χώρο',
     nativeDef: 'ορισμός',
+    howToSay: 'Πώς να το πείτε:', hearWord: 'Ακούστε την προφορά',
   },
 
   sounds: {

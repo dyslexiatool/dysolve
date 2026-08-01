@@ -7,6 +7,25 @@ import { LANGUAGES } from '../../i18n/languages'
 const APP_LANG_CODES = [...new Set(LANGUAGES.map((l) => l.ttsLang))].filter(
   (code) => code in LANG_NAMES
 )
+
+function speakWord(text: string, langCode: string) {
+  const u = new SpeechSynthesisUtterance(text)
+  // Use the full language code if available, otherwise the short prefix
+  u.lang = langCode
+  u.rate = 0.75
+  u.pitch = 1.0
+  const prefix = langCode.split('-')[0].toLowerCase()
+  const voices = window.speechSynthesis.getVoices()
+  const langVoices = voices.filter(v => v.lang.toLowerCase().startsWith(prefix))
+  const preferred = langVoices.find(v =>
+    v.name.includes('Google') || v.name.includes('Neural') ||
+    v.name.includes('Natural') || v.name.includes('Premium') ||
+    v.name.includes('Samantha') || v.name.includes('Daniel')
+  ) ?? langVoices.find(v => v.localService) ?? langVoices[0] ?? null
+  if (preferred) u.voice = preferred
+  window.speechSynthesis.cancel()
+  window.speechSynthesis.speak(u)
+}
 const MORE_LANGS = Object.keys(LANG_NAMES)
   .filter((l) => !APP_LANG_CODES.includes(l))
   .sort((a, b) => LANG_NAMES[a].localeCompare(LANG_NAMES[b]))
@@ -279,33 +298,18 @@ export function WordDefinitionPopup({
               </div>
             )}
 
-            {state.sourceLang === 'en' && state.targetLang === 'en' && state.entries?.[0]?.phonetic && (
+            {/* Pronunciation row — IPA for English, speaker button for all languages */}
+            {unit === 'word' && (
               <div className="flex items-center gap-2">
-                <span className="text-xs text-slate-400">How to say it:</span>
-                <span className="text-xs text-sky-500 font-mono">{state.entries[0].phonetic}</span>
+                {state.sourceLang === 'en' && state.targetLang === 'en' && state.entries?.[0]?.phonetic && (
+                  <>
+                    <span className="text-xs text-slate-400">{p?.howToSay ?? 'How to say it:'}</span>
+                    <span className="text-xs text-sky-500 font-mono">{state.entries[0].phonetic}</span>
+                  </>
+                )}
                 <button
-                  onClick={() => {
-                    const u = new SpeechSynthesisUtterance(word)
-                    u.lang = 'en-US'
-                    u.rate = 0.75
-                    u.pitch = 1.0
-                    // Prefer high-quality neural/natural voices over the robotic default
-                    const voices = window.speechSynthesis.getVoices()
-                    const preferred = voices.find(v =>
-                      v.lang.startsWith('en') && (
-                        v.name.includes('Google') ||
-                        v.name.includes('Neural') ||
-                        v.name.includes('Natural') ||
-                        v.name.includes('Premium') ||
-                        v.name.includes('Samantha') ||
-                        v.name.includes('Daniel')
-                      )
-                    ) ?? voices.find(v => v.lang.startsWith('en') && v.localService) ?? null
-                    if (preferred) u.voice = preferred
-                    window.speechSynthesis.cancel()
-                    window.speechSynthesis.speak(u)
-                  }}
-                  title="Hear pronunciation"
+                  onClick={() => speakWord(word, fromLang)}
+                  title={p?.hearWord ?? 'Hear pronunciation'}
                   className="flex items-center justify-center w-6 h-6 rounded-full bg-sky-100 hover:bg-sky-200 text-sky-600 transition-colors"
                 >
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">

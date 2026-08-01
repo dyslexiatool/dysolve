@@ -192,6 +192,7 @@ export const pt: Translations = {
     removeBold: 'Remover negrito', boldWord: 'Negrito para revisão',
     collapse: 'Recolher', expandMore: 'Expandir para mais espaço',
     nativeDef: 'definição',
+    howToSay: 'Como pronunciar:', hearWord: 'Ouvir pronúncia',
   },
 
   sounds: {

@@ -211,6 +211,7 @@ export const en: Translations = {
     removeBold: 'Remove bold', boldWord: 'Bold for revision',
     collapse: 'Collapse', expandMore: 'Expand for more space',
     nativeDef: 'definition',
+    howToSay: 'How to say it:', hearWord: 'Hear pronunciation',
   },
 
   sounds: {

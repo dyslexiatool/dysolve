@@ -192,6 +192,7 @@ export const uk: Translations = {
     removeBold: 'Зняти жирний', boldWord: 'Жирний для повторення',
     collapse: 'Згорнути', expandMore: 'Розгорнути для більшого простору',
     nativeDef: 'визначення',
+    howToSay: 'Як вимовити:', hearWord: 'Слухати вимову',
   },
 
   sounds: {

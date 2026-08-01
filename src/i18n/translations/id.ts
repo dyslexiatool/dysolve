@@ -192,6 +192,7 @@ export const id: Translations = {
     removeBold: 'Hapus tebal', boldWord: 'Tebal untuk revisi',
     collapse: 'Ciutkan', expandMore: 'Perluas untuk lebih banyak ruang',
     nativeDef: 'definisi',
+    howToSay: 'Cara mengucapkan:', hearWord: 'Dengar pengucapan',
   },
 
   sounds: {

@@ -156,6 +156,7 @@ export const zhCN: Translations = {
     removeBold: '取消加粗', boldWord: '加粗以复习',
     collapse: '收起', expandMore: '展开以获取更多空间',
     nativeDef: '释义',
+    howToSay: '怎么读:', hearWord: '听发音',
   },
 
   sounds: {

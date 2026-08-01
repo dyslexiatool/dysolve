@@ -246,6 +246,8 @@ export interface Translations {
     collapse?: string      // "Collapse" (tooltip)
     expandMore?: string    // "Expand for more space" (tooltip)
     nativeDef?: string     // "definition" (e.g. "English definition")
+    howToSay?: string      // "How to say it:" (before IPA phonetic)
+    hearWord?: string      // "Hear pronunciation" (speaker button tooltip)
   }
 
   sounds?: {

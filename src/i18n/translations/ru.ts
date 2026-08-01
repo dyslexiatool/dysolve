@@ -155,6 +155,7 @@ export const ru: Translations = {
     removeBold: 'Убрать жирный', boldWord: 'Жирный для повторения',
     collapse: 'Свернуть', expandMore: 'Развернуть для большего пространства',
     nativeDef: 'определение',
+    howToSay: 'Как произносить:', hearWord: 'Слушать произношение',
   },
 
   sounds: {

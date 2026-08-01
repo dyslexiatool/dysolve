@@ -155,6 +155,7 @@ export const it: Translations = {
     removeBold: 'Rimuovi grassetto', boldWord: 'Grassetto per revisione',
     collapse: 'Comprimi', expandMore: 'Espandi per più spazio',
     nativeDef: 'definizione',
+    howToSay: 'Come si pronuncia:', hearWord: 'Ascolta la pronuncia',
   },
 
   sounds: {
