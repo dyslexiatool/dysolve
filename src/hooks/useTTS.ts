@@ -47,8 +47,26 @@ export function useTTS(text: string, ttsLangCode = 'en', rate = 0.88) {
   const wordOffsetsRef = useRef<number[]>([])
   const boundaryFiredRef = useRef(false)
   const boundaryTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const chromeKeepAliveRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const voiceURIRef = useRef(selectedVoiceURI)
   const prevLangCode = useRef(ttsLangCode)
+
+  // Chrome bug: speechSynthesis silently stops after ~15s. pause()+resume() every 14s keeps it alive.
+  function startChromeKeepAlive() {
+    stopChromeKeepAlive()
+    chromeKeepAliveRef.current = setInterval(() => {
+      if (speechSynthesis.speaking && !speechSynthesis.paused) {
+        speechSynthesis.pause()
+        speechSynthesis.resume()
+      }
+    }, 14000)
+  }
+  function stopChromeKeepAlive() {
+    if (chromeKeepAliveRef.current) {
+      clearInterval(chromeKeepAliveRef.current)
+      chromeKeepAliveRef.current = null
+    }
+  }
 
   // Load voices and auto-select best voice for the current language
   useEffect(() => {
@@ -97,6 +115,7 @@ export function useTTS(text: string, ttsLangCode = 'en', rate = 0.88) {
     return () => {
       speechSynthesis.cancel()
       if (boundaryTimerRef.current) clearTimeout(boundaryTimerRef.current)
+      stopChromeKeepAlive()
     }
   }, [])
 
@@ -149,9 +168,11 @@ export function useTTS(text: string, ttsLangCode = 'en', rate = 0.88) {
     }
 
     utterance.onend = () => {
+      stopChromeKeepAlive()
       setTtsState({ isPlaying: false, isPaused: false, currentWordIndex: null })
     }
     utterance.onerror = () => {
+      stopChromeKeepAlive()
       setTtsState({ isPlaying: false, isPaused: false, currentWordIndex: null })
     }
 
@@ -164,6 +185,7 @@ export function useTTS(text: string, ttsLangCode = 'en', rate = 0.88) {
     }, 2000)
 
     speechSynthesis.speak(utterance)
+    startChromeKeepAlive()
     setTtsState({ isPlaying: true, isPaused: false, currentWordIndex: null })
   }, [text, ttsLangCode, rate])
 
@@ -180,6 +202,7 @@ export function useTTS(text: string, ttsLangCode = 'en', rate = 0.88) {
   const stop = useCallback(() => {
     speechSynthesis.cancel()
     if (boundaryTimerRef.current) clearTimeout(boundaryTimerRef.current)
+    stopChromeKeepAlive()
     setTtsState({ isPlaying: false, isPaused: false, currentWordIndex: null })
   }, [])
 
