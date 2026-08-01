@@ -55,7 +55,7 @@ export function TextInputPanel({ onTextLoaded, onDismiss, hasText, ocrLang, rece
   ]
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 pt-24 pb-12 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-24 pb-12 relative overflow-hidden w-full">
       <div className="theme-bg absolute inset-0 -z-20" />
       <div className="theme-overlay absolute inset-0 -z-10" />
       <div className="w-full max-w-2xl">

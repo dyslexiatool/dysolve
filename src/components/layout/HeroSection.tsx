@@ -48,7 +48,7 @@ function MarqueeRow({ reverse = false }: { reverse?: boolean }) {
   // Duplicate items to create seamless loop
   const items = [...LANGUAGES, ...LANGUAGES]
   return (
-    <div className="marquee-container py-1">
+    <div className="marquee-container py-1 overflow-hidden">
       <div className={reverse ? 'animate-marquee-right' : 'animate-marquee-left'} style={{ display: 'flex', width: 'max-content' }}>
         {items.map((lang, i) => (
           <span
@@ -158,7 +158,7 @@ export function HeroSection({ onGetStarted, onScreening, onTests }: HeroSectionP
   ]
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 pt-16 pb-12 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 pt-16 pb-12 relative overflow-hidden w-full">
 
       {/* Background photo */}
       <div className="theme-bg absolute inset-0 -z-20" />
@@ -172,7 +172,7 @@ export function HeroSection({ onGetStarted, onScreening, onTests }: HeroSectionP
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-rose-200/15 blur-3xl" />
       </div>
 
-      <div className="max-w-4xl mx-auto text-center space-y-10 relative">
+      <div className="w-full max-w-4xl mx-auto text-center space-y-10 relative">
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-sky-50 dark:bg-sky-900/40 border border-sky-100 dark:border-sky-800 rounded-full px-4 py-1.5 text-sm font-medium text-sky-700 dark:text-sky-300">
@@ -227,7 +227,7 @@ export function HeroSection({ onGetStarted, onScreening, onTests }: HeroSectionP
         </div>
 
         {/* Language marquee */}
-        <div className="space-y-2 -mx-6 sm:-mx-12">
+        <div className="space-y-2 -mx-4 sm:-mx-6">
           <MarqueeRow reverse={false} />
           <MarqueeRow reverse={true} />
         </div>

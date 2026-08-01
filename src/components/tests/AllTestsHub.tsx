@@ -138,7 +138,7 @@ export function AllTestsHub({ onBack }: Props) {
 
   return (
     <div className="min-h-screen pt-20 pb-16 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="w-full max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-8 text-center">
           <button
