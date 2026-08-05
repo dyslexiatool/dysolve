@@ -18,8 +18,6 @@ const OPENROUTER_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions'
 
 // Try models in order until one succeeds (verified working 2026-08)
 const FREE_MODELS = [
-  'google/gemma-4-26b-a4b-it:free',       // clean prose summaries
-  'nvidia/nemotron-3-ultra-550b-a55b:free', // clean prose summaries
   'nvidia/nemotron-nano-12b-v2-vl:free',   // clean prose summaries
   'nvidia/nemotron-nano-9b-v2:free',       // clean prose summaries
   'nvidia/nemotron-3-super-120b-a12b:free', // fallback (thinking filtered by cleanOutput)
@@ -27,6 +25,9 @@ const FREE_MODELS = [
 ]
 
 const K = atob('c2stb3ItdjEtOTNiNWNiMzliY2U3MzRiYjY0M2NkNjcyNjlhODg1ZjJmN2I0ODc5YzJmYTVhY2QwNjA4YjI5YzEwM2Q1ODA5Mw==')
+
+// AI error codes (translated by the component using ?? fallbacks)
+export type AIErrorCode = 'too_short' | 'auth' | 'rate_limit' | 'unavailable'
 
 const STOP_WORDS = new Set([
   'a','an','the','is','it','in','on','at','to','for','of','and','or','but',
@@ -41,34 +42,11 @@ const STOP_WORDS = new Set([
   'back','get','got','go','goes','went','make','made','see','said','may',
 ])
 
-function splitSentences(text: string): string[] {
-  const raw = text.match(/[^.!?…]+[.!?…]+(?:\s|$)/g) ?? []
-  return raw.map(s => s.trim()).filter(s => s.split(/\s+/).length >= 6)
-}
-
 function tokenize(text: string): string[] {
   return text.toLowerCase()
     .replace(/[^a-z0-9\s'-]/g, ' ')
     .split(/\s+/)
     .filter(w => w.length > 2 && !STOP_WORDS.has(w))
-}
-
-function extractiveSummarize(text: string, numSentences: number): string {
-  const sentences = splitSentences(text)
-  if (sentences.length === 0) return text.trim()
-  if (sentences.length <= numSentences) return sentences.join(' ')
-  const freq: Record<string, number> = {}
-  sentences.forEach(s => { tokenize(s).forEach(w => { freq[w] = (freq[w] ?? 0) + 1 }) })
-  const maxFreq = Math.max(1, ...Object.values(freq))
-  const scored = sentences.map((s, i) => {
-    const words = tokenize(s)
-    if (words.length === 0) return { s, i, score: 0 }
-    const termScore = words.reduce((sum, w) => sum + (freq[w] ?? 0) / maxFreq, 0) / words.length
-    const relPos = i / (sentences.length - 1)
-    const posBoost = relPos < 0.2 ? 1.4 : relPos > 0.8 ? 1.15 : 1.0
-    return { s, i, score: termScore * posBoost * Math.min(1, words.length / 10) }
-  })
-  return scored.slice().sort((a, b) => b.score - a.score).slice(0, numSentences).sort((a, b) => a.i - b.i).map(x => x.s).join(' ')
 }
 
 function extractKeywords(text: string, n = 5): string[] {
@@ -184,7 +162,7 @@ export function useAISummary() {
 
     const wordCount = text.trim().split(/\s+/).length
     if (wordCount < 40) {
-      setError('too_short')
+      setError('too_short' as AIErrorCode)
       return false
     }
 
@@ -212,12 +190,8 @@ export function useAISummary() {
         }
       }
 
-      // All models failed — show error, no silent extractive fallback
-      setError(lastError === 'auth'
-        ? 'API key invalid. Contact support.'
-        : lastError === 'rate_limit'
-        ? 'AI rate limit reached. Please wait a moment and try again.'
-        : `AI unavailable (${lastError}). Please try again shortly.`)
+      // All models failed — set short error code (component translates it)
+      setError(lastError === 'auth' ? 'auth' : lastError === 'rate_limit' ? 'rate_limit' : 'unavailable')
       return false
 
     } finally {

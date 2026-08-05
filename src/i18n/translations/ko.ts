@@ -20,6 +20,10 @@ export const ko: Translations = {
     statLangs: '언어', statTargets: '번역 언어', statFonts: '폰트', statPrivate: '비공개 & 무료',
     tagline: '독서 어려움을 극복하세요',
     everythingYouNeed: '필요한 모든 것',
+    allTestsBadge: '현재 28개 테스트 이용 가능',
+    allTestsTitle: '당신의 마음을 탐색하세요',
+    allTestsSub: 'IQ, MBTI, 애착 유형, DISC, 에니어그램, ADHD 검사, 우울증 검사 외 21가지 — 모두 무료, 비공개, 20개 언어 지원.',
+    allTestsCta: '모든 테스트 보기',
   },
 
   input: {
@@ -211,6 +215,12 @@ export const ko: Translations = {
     catAcademic: '학업 능력',
     catMentalHealth: '정신 건강',
     catBehavioral: '행동 유형',
+    whatThisMeans: '이것이 의미하는 것',
+    nextSteps: '다음 단계',
+    quitTitle: '이 테스트를 그만두시겠습니까?',
+    quitSub: '진행 상황이 사라집니다. 언제든지 테스트를 다시 볼 수 있습니다.',
+    continueTestBtn: '계속하기',
+    quitBtn: '그만두기',
 
     testMeta: {
       iq: {

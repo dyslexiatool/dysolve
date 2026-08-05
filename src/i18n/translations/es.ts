@@ -20,6 +20,10 @@ export const es: Translations = {
     statLangs: 'Idiomas', statTargets: 'Idiomas de Traducción', statFonts: 'Fuentes', statPrivate: 'Privado y Gratis',
     tagline: 'Supera tus dificultades de lectura',
     everythingYouNeed: 'Todo lo que necesitas',
+    allTestsBadge: '28 tests disponibles ahora',
+    allTestsTitle: 'Explora tu mente',
+    allTestsSub: 'CI, MBTI, estilo de apego, DISC, eneagrama, cribado de TDAH, cribado de depresión y 21 más — todos gratuitos, privados y disponibles en 20 idiomas.',
+    allTestsCta: 'Ver todos los tests',
   },
 
   input: {
@@ -211,6 +215,12 @@ export const es: Translations = {
     catAcademic: 'Habilidades Académicas',
     catMentalHealth: 'Salud Mental',
     catBehavioral: 'Conductual',
+    whatThisMeans: 'Qué significa esto',
+    nextSteps: 'Próximos pasos',
+    quitTitle: '¿Abandonar este test?',
+    quitSub: 'Tu progreso se perderá. Puedes retomar el test en cualquier momento.',
+    continueTestBtn: 'Seguir adelante',
+    quitBtn: 'Abandonar',
 
     testMeta: {
       iq: {

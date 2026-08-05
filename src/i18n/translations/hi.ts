@@ -20,6 +20,10 @@ export const hi: Translations = {
     statLangs: 'भाषाएं', statTargets: 'अनुवाद भाषाएं', statFonts: 'फ़ॉन्ट', statPrivate: 'निजी और मुफ़्त',
     tagline: 'अपनी पठन चुनौतियों को हल करें',
     everythingYouNeed: 'सब कुछ जो आपको चाहिए',
+    allTestsBadge: 'अभी 28 परीक्षण उपलब्ध हैं',
+    allTestsTitle: 'अपने मन को जानें',
+    allTestsSub: 'IQ, MBTI, अटैचमेंट स्टाइल, DISC, एनीयाग्राम, ADHD स्क्रीनिंग, डिप्रेशन स्क्रीनिंग और 21 और — सभी मुफ़्त, निजी और 20 भाषाओं में उपलब्ध।',
+    allTestsCta: 'सभी परीक्षण देखें',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const hi: Translations = {
     catAcademic: 'शैक्षणिक कौशल',
     catMentalHealth: 'मानसिक स्वास्थ्य',
     catBehavioral: 'व्यावहारिक',
+    whatThisMeans: 'इसका क्या मतलब है',
+    nextSteps: 'अगले कदम',
+    quitTitle: 'यह परीक्षण छोड़ें?',
+    quitSub: 'आपकी प्रगति खो जाएगी। आप कभी भी परीक्षण दोबारा दे सकते हैं।',
+    continueTestBtn: 'जारी रखें',
+    quitBtn: 'छोड़ें',
 
     testMeta: {
       iq: {

@@ -80,7 +80,8 @@
       "Bash(/opt/anaconda3/bin/python3 /tmp/patch_uk_6.py)",
       "Skill(update-config)",
       "Skill(update-config:*)",
-      "Bash(/opt/anaconda3/bin/npx playwright:*)"
+      "Bash(/opt/anaconda3/bin/npx playwright:*)",
+      "Bash(gh run *)"
     ]
   }
 }

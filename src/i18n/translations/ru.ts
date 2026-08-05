@@ -20,6 +20,10 @@ export const ru: Translations = {
     statLangs: 'Языков', statTargets: 'Языков перевода', statFonts: 'Шрифтов', statPrivate: 'Приватно и бесплатно',
     tagline: 'Преодолейте трудности с чтением',
     everythingYouNeed: 'Всё необходимое',
+    allTestsBadge: '28 тестов доступно сейчас',
+    allTestsTitle: 'Исследуйте свой разум',
+    allTestsSub: 'IQ, MBTI, стиль привязанности, DISC, эннеаграмма, скрининг СДВГ, скрининг депрессии и ещё 21 — все бесплатно, конфиденциально и доступно на 20 языках.',
+    allTestsCta: 'Смотреть все тесты',
   },
 
   input: {
@@ -211,6 +215,12 @@ export const ru: Translations = {
     catAcademic: 'Академические навыки',
     catMentalHealth: 'Психическое здоровье',
     catBehavioral: 'Поведенческий',
+    whatThisMeans: 'Что это означает',
+    nextSteps: 'Следующие шаги',
+    quitTitle: 'Выйти из этого теста?',
+    quitSub: 'Ваш прогресс будет потерян. Вы можете пройти тест повторно в любое время.',
+    continueTestBtn: 'Продолжить',
+    quitBtn: 'Выйти',
 
     testMeta: {
       iq: {

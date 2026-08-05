@@ -36,12 +36,14 @@ function getDefaultLang(): string {
     const stored = localStorage.getItem(STORAGE_KEY)
     if (stored && TRANSLATION_MAP[stored]) return stored
   } catch { /* ignore */ }
-  // Browser language hint
+  // Browser language hint — exact match first so zh-TW isn't swallowed by zh-CN's 'zh' prefix
   const browserLang = navigator.language
-  const match = Object.keys(TRANSLATION_MAP).find(
-    (code) => browserLang === code || browserLang.startsWith(code.split('-')[0])
+  const exact = Object.keys(TRANSLATION_MAP).find((code) => browserLang === code)
+  if (exact) return exact
+  const prefix = Object.keys(TRANSLATION_MAP).find(
+    (code) => browserLang.startsWith(code.split('-')[0])
   )
-  return match ?? 'en'
+  return prefix ?? 'en'
 }
 
 interface LangContextValue {

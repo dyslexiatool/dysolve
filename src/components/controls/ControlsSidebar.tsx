@@ -366,7 +366,11 @@ export function ControlsSidebar({
               <div className="rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 px-3 py-2.5 text-xs text-red-600 dark:text-red-400">
                 {error === 'too_short'
                   ? (s.aiSummaryTooShort ?? 'Text is too short to summarise — load a longer passage first.')
-                  : error}
+                  : error === 'auth'
+                  ? (s.aiSummaryErrAuth ?? 'API key invalid. Please contact support.')
+                  : error === 'rate_limit'
+                  ? (s.aiSummaryErrRateLimit ?? 'AI rate limit reached. Please wait a moment and try again.')
+                  : (s.aiSummaryErrUnavailable ?? 'AI unavailable. Please try again shortly.')}
               </div>
             )}
 

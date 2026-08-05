@@ -20,6 +20,10 @@ export const nl: Translations = {
     statLangs: 'Talen', statTargets: 'Vertaaltalen', statFonts: 'Lettertypen', statPrivate: 'Privé & Gratis',
     tagline: 'Overwin uw leesuitdagingen',
     everythingYouNeed: 'Alles wat u nodig heeft',
+    allTestsBadge: '28 tests nu beschikbaar',
+    allTestsTitle: 'Verken je geest',
+    allTestsSub: 'IQ, MBTI, hechtingsstijl, DISC, enneagram, ADHD-screening, depressiescreening en nog 21 meer — allemaal gratis, privé en beschikbaar in 20 talen.',
+    allTestsCta: 'Alle tests bekijken',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const nl: Translations = {
     catAcademic: 'Academische Vaardigheden',
     catMentalHealth: 'Geestelijke Gezondheid',
     catBehavioral: 'Gedrag',
+    whatThisMeans: 'Wat dit betekent',
+    nextSteps: 'Volgende stappen',
+    quitTitle: 'Deze test stoppen?',
+    quitSub: 'Je voortgang gaat verloren. Je kunt de test op elk moment opnieuw doen.',
+    continueTestBtn: 'Doorgaan',
+    quitBtn: 'Stoppen',
 
     testMeta: {
       iq: {

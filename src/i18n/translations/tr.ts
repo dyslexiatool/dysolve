@@ -20,6 +20,10 @@ export const tr: Translations = {
     statLangs: 'Dil', statTargets: 'Çeviri Dili', statFonts: 'Yazı Tipi', statPrivate: 'Özel & Ücretsiz',
     tagline: 'Okuma zorluklarınızı aşın',
     everythingYouNeed: 'İhtiyacınız olan her şey',
+    allTestsBadge: 'Şu anda 28 test mevcut',
+    allTestsTitle: 'Zihninizi Keşfedin',
+    allTestsSub: 'IQ, MBTI, bağlanma stili, DISC, enneagram, DEHB taraması, depresyon taraması ve 21 tane daha — hepsi ücretsiz, gizli ve 20 dilde kullanılabilir.',
+    allTestsCta: 'Tüm Testlere Göz At',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const tr: Translations = {
     catAcademic: 'Akademik Beceriler',
     catMentalHealth: 'Ruh Sağlığı',
     catBehavioral: 'Davranışsal',
+    whatThisMeans: 'Bu ne anlama geliyor',
+    nextSteps: 'Sonraki adımlar',
+    quitTitle: 'Bu testi bırakıyor musunuz?',
+    quitSub: 'İlerlemeniz kaybolacak. Testi istediğiniz zaman yeniden alabilirsiniz.',
+    continueTestBtn: 'Devam et',
+    quitBtn: 'Bırak',
 
     testMeta: {
       iq: {

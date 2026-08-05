@@ -20,6 +20,10 @@ export const id: Translations = {
     statLangs: 'Bahasa', statTargets: 'Bahasa Terjemahan', statFonts: 'Font', statPrivate: 'Privat & Gratis',
     tagline: 'Atasi tantangan membaca Anda',
     everythingYouNeed: 'Semua yang Anda butuhkan',
+    allTestsBadge: '28 tes tersedia sekarang',
+    allTestsTitle: 'Jelajahi Pikiran Anda',
+    allTestsSub: 'IQ, MBTI, gaya kelekatan, DISC, enneagram, skrining ADHD, skrining depresi, dan 21 lainnya — semua gratis, privat, dan tersedia dalam 20 bahasa.',
+    allTestsCta: 'Lihat Semua Tes',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const id: Translations = {
     catAcademic: 'Kemampuan Akademis',
     catMentalHealth: 'Kesehatan Mental',
     catBehavioral: 'Perilaku',
+    whatThisMeans: 'Apa artinya ini',
+    nextSteps: 'Langkah selanjutnya',
+    quitTitle: 'Keluar dari tes ini?',
+    quitSub: 'Kemajuan Anda akan hilang. Anda dapat mengikuti tes ini kapan saja.',
+    continueTestBtn: 'Lanjutkan',
+    quitBtn: 'Keluar',
 
     testMeta: {
       iq: {

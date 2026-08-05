@@ -26,10 +26,16 @@ function voiceQualityScore(v: SpeechSynthesisVoice): number {
 }
 
 // Find the best voice for a given BCP-47 language prefix (e.g. 'zh', 'en', 'fr')
+// Falls back to the base language prefix (e.g. 'zh' when 'zh-CN' has no match)
 function pickBestVoice(voices: SpeechSynthesisVoice[], langCode: string): SpeechSynthesisVoice | null {
-  const matching = voices.filter((v) => v.lang.toLowerCase().startsWith(langCode.toLowerCase()))
-  if (matching.length === 0) return null
-  return matching.sort((a, b) => voiceQualityScore(b) - voiceQualityScore(a))[0]
+  const prefixes = [langCode.toLowerCase()]
+  const base = langCode.split('-')[0].toLowerCase()
+  if (base !== langCode.toLowerCase()) prefixes.push(base)
+  for (const prefix of prefixes) {
+    const matching = voices.filter((v) => v.lang.toLowerCase().startsWith(prefix))
+    if (matching.length > 0) return matching.sort((a, b) => voiceQualityScore(b) - voiceQualityScore(a))[0]
+  }
+  return null
 }
 
 export function useTTS(text: string, ttsLangCode = 'en', rate = 0.88) {

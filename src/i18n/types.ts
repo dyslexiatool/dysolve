@@ -188,6 +188,9 @@ export interface Translations {
     aiSummaryClear?: string       // "Clear summary"
     aiSummaryNote?: string        // footer note
     aiSummaryTooShort?: string    // error: text too short
+    aiSummaryErrAuth?: string     // error: API key invalid
+    aiSummaryErrRateLimit?: string // error: rate limit
+    aiSummaryErrUnavailable?: string // error: service unavailable
     aiSummaryIllustrated?: string // "Illustrated"
     aiSummaryPlain?: string       // "Plain text"
     aiSummaryViewBtn?: string     // "View Summary"

@@ -20,6 +20,10 @@ export const sv: Translations = {
     statLangs: 'Språk', statTargets: 'Översättningsspråk', statFonts: 'Teckensnitt', statPrivate: 'Privat & Gratis',
     tagline: 'Övervinn dina läsutmaningar',
     everythingYouNeed: 'Allt du behöver',
+    allTestsBadge: '28 tester tillgängliga nu',
+    allTestsTitle: 'Utforska ditt sinne',
+    allTestsSub: 'IQ, MBTI, anknytningsstil, DISC, enneagram, ADHD-screening, depressionscreening och 21 till — alla gratis, privata och tillgängliga på 20 språk.',
+    allTestsCta: 'Bläddra bland alla tester',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const sv: Translations = {
     catAcademic: 'Akademiska Färdigheter',
     catMentalHealth: 'Psykisk Hälsa',
     catBehavioral: 'Beteende',
+    whatThisMeans: 'Vad detta innebär',
+    nextSteps: 'Nästa steg',
+    quitTitle: 'Avsluta det här testet?',
+    quitSub: 'Din framsteg går förlorad. Du kan göra om testet när som helst.',
+    continueTestBtn: 'Fortsätt',
+    quitBtn: 'Avsluta',
 
     testMeta: {
       iq: {

@@ -65,7 +65,7 @@ export function WordDefinitionPopup({
   const p = t.popup
   const { state, lookup } = useWordDefinition()
   const [unit, setUnit] = useState<Unit>('word')
-  const [targetLang, setTargetLang] = useState('en')
+  const [targetLang, setTargetLang] = useState(sourceLang === 'en' ? 'en' : sourceLang)
   const [fromLang, setFromLang] = useState(sourceLang)
   const [expanded, setExpanded] = useState(false)
 

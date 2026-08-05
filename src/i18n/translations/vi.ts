@@ -20,6 +20,10 @@ export const vi: Translations = {
     statLangs: 'Ngôn ngữ', statTargets: 'Ngôn ngữ dịch', statFonts: 'Phông chữ', statPrivate: 'Riêng tư & miễn phí',
     tagline: 'Vượt qua thách thức đọc của bạn',
     everythingYouNeed: 'Tất cả những gì bạn cần',
+    allTestsBadge: '28 bài kiểm tra hiện có',
+    allTestsTitle: 'Khám phá tâm trí của bạn',
+    allTestsSub: 'IQ, MBTI, phong cách gắn bó, DISC, Enneagram, sàng lọc ADHD, sàng lọc trầm cảm và 21 bài nữa — tất cả miễn phí, riêng tư và có sẵn trong 20 ngôn ngữ.',
+    allTestsCta: 'Xem tất cả bài kiểm tra',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const vi: Translations = {
     catAcademic: 'Kỹ năng Học thuật',
     catMentalHealth: 'Sức khỏe Tâm thần',
     catBehavioral: 'Hành vi',
+    whatThisMeans: 'Điều này có nghĩa là gì',
+    nextSteps: 'Các bước tiếp theo',
+    quitTitle: 'Thoát bài kiểm tra này?',
+    quitSub: 'Tiến trình của bạn sẽ bị mất. Bạn có thể làm lại bài kiểm tra bất cứ lúc nào.',
+    continueTestBtn: 'Tiếp tục',
+    quitBtn: 'Thoát',
 
     testMeta: {
       iq: {

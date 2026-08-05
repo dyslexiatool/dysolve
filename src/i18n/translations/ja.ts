@@ -20,6 +20,10 @@ export const ja: Translations = {
     statLangs: '言語', statTargets: '翻訳言語', statFonts: 'フォント', statPrivate: 'プライベート&無料',
     tagline: '読書の悩みを解決しよう',
     everythingYouNeed: '必要なすべて',
+    allTestsBadge: '現在28のテストが利用可能',
+    allTestsTitle: 'あなたの心を探求する',
+    allTestsSub: 'IQ、MBTI、愛着スタイル、DISC、エニアグラム、ADHDスクリーニング、うつ病スクリーニングなど全21種類 — すべて無料、プライベート、20言語対応。',
+    allTestsCta: 'すべてのテストを見る',
   },
 
   input: {
@@ -211,6 +215,12 @@ export const ja: Translations = {
     catAcademic: '学業スキル',
     catMentalHealth: 'メンタルヘルス',
     catBehavioral: '行動特性',
+    whatThisMeans: 'これが意味すること',
+    nextSteps: '次のステップ',
+    quitTitle: 'このテストをやめますか？',
+    quitSub: '進捗は失われます。テストはいつでも再受験できます。',
+    continueTestBtn: '続ける',
+    quitBtn: 'やめる',
 
     testMeta: {
       iq: {

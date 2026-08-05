@@ -20,6 +20,10 @@ export const el: Translations = {
     statLangs: 'Γλώσσες', statTargets: 'Γλώσσες μετάφρασης', statFonts: 'Γραμματοσειρές', statPrivate: 'Ιδιωτικό & Δωρεάν',
     tagline: 'Ξεπεράστε τις δυσκολίες ανάγνωσης',
     everythingYouNeed: 'Όλα όσα χρειάζεστε',
+    allTestsBadge: '28 τεστ διαθέσιμα τώρα',
+    allTestsTitle: 'Εξερευνήστε το μυαλό σας',
+    allTestsSub: 'IQ, MBTI, στυλ προσκόλλησης, DISC, εννεάγραμμα, screening ΔΕΠΥ, screening κατάθλιψης και άλλα 21 — όλα δωρεάν, ιδιωτικά και διαθέσιμα σε 20 γλώσσες.',
+    allTestsCta: 'Δείτε όλα τα τεστ',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const el: Translations = {
     catAcademic: 'Ακαδημαϊκές Δεξιότητες',
     catMentalHealth: 'Ψυχική Υγεία',
     catBehavioral: 'Συμπεριφορά',
+    whatThisMeans: 'Τι σημαίνει αυτό',
+    nextSteps: 'Επόμενα βήματα',
+    quitTitle: 'Έξοδος από αυτό το τεστ;',
+    quitSub: 'Η πρόοδός σας θα χαθεί. Μπορείτε να επαναλάβετε το τεστ ανά πάσα στιγμή.',
+    continueTestBtn: 'Συνέχεια',
+    quitBtn: 'Έξοδος',
 
     testMeta: {
       iq: {

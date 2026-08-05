@@ -20,6 +20,10 @@ export const zhCN: Translations = {
     statLangs: '种语言', statTargets: '个翻译目标', statFonts: '款字体', statPrivate: '隐私免费',
     tagline: '克服您的阅读困难',
     everythingYouNeed: '您所需的一切',
+    allTestsBadge: '现有28项测试',
+    allTestsTitle: '探索你的内心世界',
+    allTestsSub: 'IQ、MBTI、依恋风格、DISC、九型人格、ADHD筛查、抑郁筛查等共21项——全部免费、私密，支持20种语言。',
+    allTestsCta: '浏览所有测试',
   },
 
   input: {
@@ -212,6 +216,12 @@ export const zhCN: Translations = {
     catAcademic: '学术技能',
     catMentalHealth: '心理健康',
     catBehavioral: '行为特质',
+    whatThisMeans: '这意味着什么',
+    nextSteps: '下一步',
+    quitTitle: '退出此测试？',
+    quitSub: '你的进度将会丢失。你可以随时重新参加测试。',
+    continueTestBtn: '继续',
+    quitBtn: '退出',
 
     testMeta: {
       iq: {

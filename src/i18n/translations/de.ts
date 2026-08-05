@@ -20,6 +20,10 @@ export const de: Translations = {
     statLangs: 'Sprachen', statTargets: 'Übersetzungssprachen', statFonts: 'Schriften', statPrivate: 'Privat & Kostenlos',
     tagline: 'Überwinden Sie Ihre Leseschwierigkeiten',
     everythingYouNeed: 'Alles was Sie brauchen',
+    allTestsBadge: '28 Tests jetzt verfügbar',
+    allTestsTitle: 'Entdecke deinen Geist',
+    allTestsSub: 'IQ, MBTI, Bindungsstil, DISC, Enneagramm, ADHS-Screening, Depressions-Screening und 21 weitere — alle kostenlos, privat und in 20 Sprachen verfügbar.',
+    allTestsCta: 'Alle Tests durchsuchen',
   },
 
   input: {
@@ -211,6 +215,12 @@ export const de: Translations = {
     catAcademic: 'Akademische Fähigkeiten',
     catMentalHealth: 'Psychische Gesundheit',
     catBehavioral: 'Verhalten',
+    whatThisMeans: 'Was das bedeutet',
+    nextSteps: 'Nächste Schritte',
+    quitTitle: 'Diesen Test beenden?',
+    quitSub: 'Dein Fortschritt geht verloren. Du kannst den Test jederzeit wiederholen.',
+    continueTestBtn: 'Weitermachen',
+    quitBtn: 'Beenden',
 
     testMeta: {
       iq: {

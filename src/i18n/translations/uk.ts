@@ -20,6 +20,10 @@ export const uk: Translations = {
     statLangs: 'Мов', statTargets: 'Мов перекладу', statFonts: 'Шрифтів', statPrivate: 'Приватно і безкоштовно',
     tagline: 'Подолайте свої труднощі з читанням',
     everythingYouNeed: 'Все необхідне',
+    allTestsBadge: '28 тестів доступно зараз',
+    allTestsTitle: 'Дослідіть свій розум',
+    allTestsSub: "IQ, MBTI, стиль прив'язаності, DISC, енеаграма, скринінг РДУГ, скринінг депресії та ще 21 — усі безкоштовні, приватні та доступні 20 мовами.",
+    allTestsCta: 'Переглянути всі тести',
   },
 
   input: {
@@ -248,6 +252,12 @@ export const uk: Translations = {
     catAcademic: 'Академічні навички',
     catMentalHealth: 'Психічне здоровʼя',
     catBehavioral: 'Поведінковий',
+    whatThisMeans: 'Що це означає',
+    nextSteps: 'Наступні кроки',
+    quitTitle: 'Вийти з цього тесту?',
+    quitSub: 'Ваш прогрес буде втрачено. Ви можете пройти тест повторно будь-коли.',
+    continueTestBtn: 'Продовжити',
+    quitBtn: 'Вийти',
 
     testMeta: {
       iq: {

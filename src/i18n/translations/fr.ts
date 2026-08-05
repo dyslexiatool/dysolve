@@ -20,6 +20,10 @@ export const fr: Translations = {
     statLangs: 'Langues', statTargets: 'Langues de traduction', statFonts: 'Polices', statPrivate: 'Privé et Gratuit',
     tagline: 'Surmontez vos difficultés de lecture',
     everythingYouNeed: 'Tout ce dont vous avez besoin',
+    allTestsBadge: '28 tests disponibles maintenant',
+    allTestsTitle: 'Explorez votre esprit',
+    allTestsSub: "QI, MBTI, style d'attachement, DISC, ennéagramme, dépistage du TDAH, dépistage de la dépression et 21 autres — tous gratuits, privés et disponibles en 20 langues.",
+    allTestsCta: 'Parcourir tous les tests',
   },
 
   input: {
@@ -211,6 +215,12 @@ export const fr: Translations = {
     catAcademic: 'Compétences Académiques',
     catMentalHealth: 'Santé Mentale',
     catBehavioral: 'Comportemental',
+    whatThisMeans: 'Ce que cela signifie',
+    nextSteps: 'Prochaines étapes',
+    quitTitle: 'Quitter ce test ?',
+    quitSub: 'Votre progression sera perdue. Vous pouvez reprendre le test à tout moment.',
+    continueTestBtn: 'Continuer',
+    quitBtn: 'Quitter',
 
     testMeta: {
       iq: {

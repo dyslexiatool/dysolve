@@ -20,6 +20,10 @@ export const zhTW: Translations = {
     statLangs: '種語言', statTargets: '個翻譯目標', statFonts: '款字體', statPrivate: '隱私免費',
     tagline: '克服您的閱讀困難',
     everythingYouNeed: '您所需的一切',
+    allTestsBadge: '現有28項測試',
+    allTestsTitle: '探索你的內心世界',
+    allTestsSub: 'IQ、MBTI、依附風格、DISC、九型人格、ADHD篩查、憂鬱篩查等共21項——全部免費、私密，支援20種語言。',
+    allTestsCta: '瀏覽所有測試',
   },
 
   input: {
@@ -199,6 +203,12 @@ export const zhTW: Translations = {
     catAcademic: '學術技能',
     catMentalHealth: '心理健康',
     catBehavioral: '行為特質',
+    whatThisMeans: '這代表什麼',
+    nextSteps: '下一步',
+    quitTitle: '退出此測試？',
+    quitSub: '你的進度將會遺失。你可以隨時重新參加測試。',
+    continueTestBtn: '繼續',
+    quitBtn: '退出',
 
     testMeta: {
       iq: {
