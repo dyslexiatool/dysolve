@@ -182,7 +182,7 @@ function AppInner() {
 
   return (
     <div
-      className="min-h-screen font-sans dark:bg-slate-900 overflow-x-hidden"
+      className="app-bg min-h-screen font-sans dark:bg-slate-900 overflow-x-hidden"
       style={{ backgroundImage: `url('${import.meta.env.BASE_URL}${isDark ? 'dark_background.jpg' : 'background.jpg'}')`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}
     >
       <Header
