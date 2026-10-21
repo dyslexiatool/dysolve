@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const tr: Translations = {
   langName: 'Türkçe', ocrLang: 'tur', ttsLangCode: 'tr',
 
-  nav: { screening: 'Tarama Testi', resources: 'Kaynaklar', loadText: 'Yeni Metin Yükle', tagline: 'Disleksi Dostu Okuyucu', lightMode: 'Açık mod', darkMode: 'Koyu mod', preferencesBtn: 'Tercihler', allTests: 'Tüm Testler' },
+  nav: { screening: 'Tarama Testi', resources: 'Kaynaklar', loadText: 'Yeni Metin Yükle', tagline: 'Disleksi Dostu Okuyucu', lightMode: 'Açık mod', darkMode: 'Koyu mod', preferencesBtn: 'Tercihler', allTests: 'Diğer Testler' },
 
   hero: {
     badge: 'Herkesin Rahatça Okuması İçin Tasarlandı',

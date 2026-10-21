@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const id: Translations = {
   langName: 'Bahasa Indonesia', ocrLang: 'ind', ttsLangCode: 'id',
 
-  nav: { screening: 'Tes Skrining', resources: 'Sumber Daya', loadText: 'Muat Teks Baru', tagline: 'Pembaca Ramah Disleksia', lightMode: 'Mode terang', darkMode: 'Mode gelap', preferencesBtn: 'Preferensi', allTests: 'Semua Tes' },
+  nav: { screening: 'Tes Skrining', resources: 'Sumber Daya', loadText: 'Muat Teks Baru', tagline: 'Pembaca Ramah Disleksia', lightMode: 'Mode terang', darkMode: 'Mode gelap', preferencesBtn: 'Preferensi', allTests: 'Tes Lainnya' },
 
   hero: {
     badge: 'Dirancang agar semua orang bisa membaca dengan nyaman',

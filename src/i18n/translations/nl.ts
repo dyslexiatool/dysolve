@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const nl: Translations = {
   langName: 'Nederlands', ocrLang: 'nld', ttsLangCode: 'nl',
 
-  nav: { screening: 'Screeningstest', resources: 'Hulpbronnen', loadText: 'Nieuwe Tekst Laden', tagline: 'Dyslexievriendelijke Lezer', lightMode: 'Lichte modus', darkMode: 'Donkere modus', preferencesBtn: 'Voorkeuren', allTests: 'Alle Tests' },
+  nav: { screening: 'Screeningstest', resources: 'Hulpbronnen', loadText: 'Nieuwe Tekst Laden', tagline: 'Dyslexievriendelijke Lezer', lightMode: 'Lichte modus', darkMode: 'Donkere modus', preferencesBtn: 'Voorkeuren', allTests: 'Andere Tests' },
 
   hero: {
     badge: 'Ontworpen voor iedereen om comfortabel te lezen',

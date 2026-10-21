@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const sv: Translations = {
   langName: 'Svenska', ocrLang: 'swe', ttsLangCode: 'sv',
 
-  nav: { screening: 'Screeningtest', resources: 'Resurser', loadText: 'Ladda Ny Text', tagline: 'Dyslexi-vänlig Läsare', lightMode: 'Ljust läge', darkMode: 'Mörkt läge', preferencesBtn: 'Inställningar', allTests: 'Alla Tester' },
+  nav: { screening: 'Screeningtest', resources: 'Resurser', loadText: 'Ladda Ny Text', tagline: 'Dyslexi-vänlig Läsare', lightMode: 'Ljust läge', darkMode: 'Mörkt läge', preferencesBtn: 'Inställningar', allTests: 'Andra Tester' },
 
   hero: {
     badge: 'Designad för alla att läsa bekvämt',

@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const ko: Translations = {
   langName: '한국어', ocrLang: 'kor', ttsLangCode: 'ko',
 
-  nav: { screening: '선별 검사', resources: '자료', loadText: '새 텍스트 불러오기', tagline: '난독증 친화적 리더', lightMode: '라이트 모드', darkMode: '다크 모드', preferencesBtn: '환경설정', allTests: '모든 테스트' },
+  nav: { screening: '선별 검사', resources: '자료', loadText: '새 텍스트 불러오기', tagline: '난독증 친화적 리더', lightMode: '라이트 모드', darkMode: '다크 모드', preferencesBtn: '환경설정', allTests: '다른 테스트' },
 
   hero: {
     badge: '모든 사람이 편안하게 읽을 수 있도록 설계',

@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const ja: Translations = {
   langName: '日本語', ocrLang: 'jpn', ttsLangCode: 'ja',
 
-  nav: { screening: 'スクリーニングテスト', resources: 'リソース', loadText: '新しいテキストを読み込む', tagline: 'ディスレクシア対応リーダー', lightMode: 'ライトモード', darkMode: 'ダークモード', preferencesBtn: '設定', allTests: '全テスト' },
+  nav: { screening: 'スクリーニングテスト', resources: 'リソース', loadText: '新しいテキストを読み込む', tagline: 'ディスレクシア対応リーダー', lightMode: 'ライトモード', darkMode: 'ダークモード', preferencesBtn: '設定', allTests: '他のテスト' },
 
   hero: {
     badge: 'すべての人が快適に読めるよう設計',

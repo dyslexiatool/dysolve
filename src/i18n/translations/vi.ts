@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const vi: Translations = {
   langName: 'Tiếng Việt', ocrLang: 'vie', ttsLangCode: 'vi',
 
-  nav: { screening: 'Bài Kiểm Tra Sàng Lọc', resources: 'Tài Nguyên', loadText: 'Tải Văn Bản Mới', tagline: 'Trình Đọc Thân Thiện với Chứng Khó Đọc', lightMode: 'Chế độ sáng', darkMode: 'Chế độ tối', preferencesBtn: 'Tuỳ chọn', allTests: 'Tất Cả Bài Kiểm Tra' },
+  nav: { screening: 'Bài Kiểm Tra Sàng Lọc', resources: 'Tài Nguyên', loadText: 'Tải Văn Bản Mới', tagline: 'Trình Đọc Thân Thiện với Chứng Khó Đọc', lightMode: 'Chế độ sáng', darkMode: 'Chế độ tối', preferencesBtn: 'Tuỳ chọn', allTests: 'Bài Kiểm Tra Khác' },
 
   hero: {
     badge: 'Được Thiết Kế để Mọi Người Đọc Thoải Mái',

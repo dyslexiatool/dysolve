@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const es: Translations = {
   langName: 'Español', ocrLang: 'spa', ttsLangCode: 'es',
 
-  nav: { screening: 'Prueba de detección', resources: 'Recursos', loadText: 'Cargar nuevo texto', tagline: 'Lector para la Dislexia', lightMode: 'Modo claro', darkMode: 'Modo oscuro', preferencesBtn: 'Preferencias', allTests: 'Todos los Tests' },
+  nav: { screening: 'Prueba de detección', resources: 'Recursos', loadText: 'Cargar nuevo texto', tagline: 'Lector para la Dislexia', lightMode: 'Modo claro', darkMode: 'Modo oscuro', preferencesBtn: 'Preferencias', allTests: 'Otros Tests' },
 
   hero: {
     badge: 'Diseñado para que todos lean con comodidad',

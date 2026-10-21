@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const ru: Translations = {
   langName: 'Русский', ocrLang: 'rus', ttsLangCode: 'ru',
 
-  nav: { screening: 'Тест скрининга', resources: 'Ресурсы', loadText: 'Загрузить новый текст', tagline: 'Читатель для дислексиков', lightMode: 'Светлый режим', darkMode: 'Тёмный режим', preferencesBtn: 'Настройки', allTests: 'Все Тесты' },
+  nav: { screening: 'Тест скрининга', resources: 'Ресурсы', loadText: 'Загрузить новый текст', tagline: 'Читатель для дислексиков', lightMode: 'Светлый режим', darkMode: 'Тёмный режим', preferencesBtn: 'Настройки', allTests: 'Другие тесты' },
 
   hero: {
     badge: 'Разработано для комфортного чтения каждого',

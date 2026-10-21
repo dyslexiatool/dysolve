@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const hi: Translations = {
   langName: 'हिन्दी', ocrLang: 'hin', ttsLangCode: 'hi',
 
-  nav: { screening: 'स्क्रीनिंग टेस्ट', resources: 'संसाधन', loadText: 'नया टेक्स्ट लोड करें', tagline: 'डिस्लेक्सिया-अनुकूल पाठक', lightMode: 'लाइट मोड', darkMode: 'डार्क मोड', preferencesBtn: 'प्राथमिकताएं', allTests: 'सभी परीक्षण' },
+  nav: { screening: 'स्क्रीनिंग टेस्ट', resources: 'संसाधन', loadText: 'नया टेक्स्ट लोड करें', tagline: 'डिस्लेक्सिया-अनुकूल पाठक', lightMode: 'लाइट मोड', darkMode: 'डार्क मोड', preferencesBtn: 'प्राथमिकताएं', allTests: 'अन्य परीक्षण' },
 
   hero: {
     badge: 'सभी के लिए आरामदायक पढ़ाई के लिए डिज़ाइन किया गया',

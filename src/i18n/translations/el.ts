@@ -3,7 +3,7 @@ import type { Translations } from '../types'
 export const el: Translations = {
   langName: 'Ελληνικά', ocrLang: 'ell', ttsLangCode: 'el',
 
-  nav: { screening: 'Τεστ Αξιολόγησης', resources: 'Πόροι', loadText: 'Φόρτωση Νέου Κειμένου', tagline: 'Αναγνώστης για Δυσλεξία', lightMode: 'Φωτεινή λειτουργία', darkMode: 'Σκοτεινή λειτουργία', preferencesBtn: 'Προτιμήσεις', allTests: 'Όλες οι Δοκιμασίες' },
+  nav: { screening: 'Τεστ Αξιολόγησης', resources: 'Πόροι', loadText: 'Φόρτωση Νέου Κειμένου', tagline: 'Αναγνώστης για Δυσλεξία', lightMode: 'Φωτεινή λειτουργία', darkMode: 'Σκοτεινή λειτουργία', preferencesBtn: 'Προτιμήσεις', allTests: 'Άλλα Τεστ' },
 
   hero: {
     badge: 'Σχεδιασμένο για Άνετη Ανάγνωση από Όλους',
