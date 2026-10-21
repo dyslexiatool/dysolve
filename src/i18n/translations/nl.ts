@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const nl: Translations = {
   langName: 'Nederlands', ocrLang: 'nld', ttsLangCode: 'nl',
 
-  nav: { screening: 'Screeningstest', resources: 'Hulpbronnen', loadText: 'Nieuwe Tekst Laden', tagline: 'Dyslexievriendelijke Lezer', lightMode: 'Lichte modus', darkMode: 'Donkere modus', preferencesBtn: 'Voorkeuren', allTests: 'Andere Tests' },
+  nav: { screening: "Ben ik dyslectisch?", resources: 'Hulpbronnen', loadText: 'Nieuwe Tekst Laden', tagline: 'Dyslexievriendelijke Lezer', lightMode: 'Lichte modus', darkMode: 'Donkere modus', preferencesBtn: 'Voorkeuren', allTests: 'Andere Tests' },
 
   hero: {
     badge: 'Ontworpen voor iedereen om comfortabel te lezen',
     h1a: 'Lees met', h1b: 'Vertrouwen',
     sub: 'Pas elke tekst aan op jouw manier van denken. Stel lettertypen, spatiëring en kleuren in en gebruik ons focusvenster om regel voor regel te lezen.',
-    cta1: 'Begin met Lezen', cta2: 'Doe de Screeningstest',
+    cta1: 'Begin met Lezen', cta2: "Ben ik dyslectisch? Doe de test",
     featureFonts: ['Dyslexievriendelijke Lettertypen', 'OpenDyslexic, Comic Neue en meer'],
     featureFocus: ['Focusvenster', 'Blokkeer afleidingen regel voor regel'],
     featureTTS: ['Tekst-naar-spraak', 'Luister met live woordmarkering'],
-    featureScreening: ['Screeningstest', 'Risicobeoordeling met 20 vragen'],
+    featureScreening: ["Ben ik dyslectisch?", 'Risicobeoordeling met 20 vragen'],
     freeNote: 'Gratis te gebruiken · Geen account vereist · Alles verwerkt in je browser',
     featureTranslate: ['Vertalen & Definiëren', 'Tik op een woord of zin voor directe betekenis, vertaling en voorbeelden in 60+ talen'],
     featureLang: ['20 Talen', 'Volledige interface, dyslexie-screening en gepersonaliseerde leesplannen in uw taal'],

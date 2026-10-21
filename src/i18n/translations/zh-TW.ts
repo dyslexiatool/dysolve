@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const zhTW: Translations = {
   langName: '中文（繁體）', ocrLang: 'chi_tra', ttsLangCode: 'zh-TW',
 
-  nav: { screening: '篩查測試', resources: '資源', loadText: '載入新文字', tagline: '閱讀障礙友善閱讀器', lightMode: '淺色模式', darkMode: '深色模式', preferencesBtn: '偏好設定', allTests: '其他測試' },
+  nav: { screening: "我有閱讀障礙嗎？", resources: '資源', loadText: '載入新文字', tagline: '閱讀障礙友善閱讀器', lightMode: '淺色模式', darkMode: '深色模式', preferencesBtn: '偏好設定', allTests: '其他測試' },
 
   hero: {
     badge: '為每個人設計，讓閱讀更輕鬆',
     h1a: '充滿自信地', h1b: '閱讀',
     sub: '根據您的大腦運作方式自訂文字。調整字體、間距、顏色，使用專注視窗逐行閱讀。',
-    cta1: '開始閱讀', cta2: '進行篩查測試',
+    cta1: '開始閱讀', cta2: "我有閱讀障礙嗎？立即測試",
     featureFonts: ['閱讀障礙友好字體', 'OpenDyslexic、Comic Neue 等'],
     featureFocus: ['專注視窗', '逐行遮蔽干擾'],
     featureTTS: ['文字轉語音', '即時單字高亮朗讀'],
-    featureScreening: ['篩查測試', '20題風險評估'],
+    featureScreening: ["我有閱讀障礙嗎？", '20題風險評估'],
     freeNote: '免費使用 · 無需註冊 · 所有處理在瀏覽器中完成',
     featureTranslate: ['翻譯與釋義', '點擊任意詞語或短語，獲取60+語言的含義、翻譯和例句'],
     featureLang: ['20種語言', '完整介面、閱讀障礙篩查及個人化閱讀計劃，全面支持您的語言'],

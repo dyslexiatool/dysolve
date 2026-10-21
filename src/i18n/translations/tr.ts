@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const tr: Translations = {
   langName: 'Türkçe', ocrLang: 'tur', ttsLangCode: 'tr',
 
-  nav: { screening: 'Tarama Testi', resources: 'Kaynaklar', loadText: 'Yeni Metin Yükle', tagline: 'Disleksi Dostu Okuyucu', lightMode: 'Açık mod', darkMode: 'Koyu mod', preferencesBtn: 'Tercihler', allTests: 'Diğer Testler' },
+  nav: { screening: "Disleksim var mı?", resources: 'Kaynaklar', loadText: 'Yeni Metin Yükle', tagline: 'Disleksi Dostu Okuyucu', lightMode: 'Açık mod', darkMode: 'Koyu mod', preferencesBtn: 'Tercihler', allTests: 'Diğer Testler' },
 
   hero: {
     badge: 'Herkesin Rahatça Okuması İçin Tasarlandı',
     h1a: 'Güvenle', h1b: 'Oku',
     sub: 'Herhangi bir metni beyninin çalışma şekline göre özelleştir. Yazı tiplerini, aralıkları, renkleri ayarla ve satır satır okumak için odak penceremizi kullan.',
-    cta1: 'Okumaya Başla', cta2: 'Tarama Testini Yap',
+    cta1: 'Okumaya Başla', cta2: "Disleksim var mı? Testi çöz",
     featureFonts: ['Disleksi Dostu Yazı Tipleri', 'OpenDyslexic, Comic Neue ve daha fazlası'],
     featureFocus: ['Odak Penceresi', 'Dikkat dağıtıcıları satır satır engelle'],
     featureTTS: ['Metinden Konuşmaya', 'Canlı kelime vurgulamasıyla dinle'],
-    featureScreening: ['Tarama Testi', '20 soruluk risk değerlendirmesi'],
+    featureScreening: ["Disleksim var mı?", '20 soruluk risk değerlendirmesi'],
     freeNote: 'Ücretsiz · Hesap gerekmez · Tüm işlemler tarayıcında gerçekleşir',
     featureTranslate: ['Çevir ve Tanımla', 'Anında anlam, çeviri ve 60+ dilde örnek için herhangi bir kelimeye dokun'],
     featureLang: ['20 Dil', 'Tam arayüz, disleksi taraması ve kişiselleştirilmiş okuma planları kendi dilinizde'],

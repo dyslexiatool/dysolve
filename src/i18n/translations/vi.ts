@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const vi: Translations = {
   langName: 'Tiếng Việt', ocrLang: 'vie', ttsLangCode: 'vi',
 
-  nav: { screening: 'Bài Kiểm Tra Sàng Lọc', resources: 'Tài Nguyên', loadText: 'Tải Văn Bản Mới', tagline: 'Trình Đọc Thân Thiện với Chứng Khó Đọc', lightMode: 'Chế độ sáng', darkMode: 'Chế độ tối', preferencesBtn: 'Tuỳ chọn', allTests: 'Bài Kiểm Tra Khác' },
+  nav: { screening: "Tôi có mắc chứng khó đọc không?", resources: 'Tài Nguyên', loadText: 'Tải Văn Bản Mới', tagline: 'Trình Đọc Thân Thiện với Chứng Khó Đọc', lightMode: 'Chế độ sáng', darkMode: 'Chế độ tối', preferencesBtn: 'Tuỳ chọn', allTests: 'Bài Kiểm Tra Khác' },
 
   hero: {
     badge: 'Được Thiết Kế để Mọi Người Đọc Thoải Mái',
     h1a: 'Đọc với', h1b: 'Tự Tin',
     sub: 'Tùy chỉnh bất kỳ văn bản nào phù hợp với cách tư duy của bạn. Điều chỉnh phông chữ, khoảng cách, màu sắc và sử dụng cửa sổ tiêu điểm để đọc từng dòng.',
-    cta1: 'Bắt Đầu Đọc', cta2: 'Làm Bài Kiểm Tra Sàng Lọc',
+    cta1: 'Bắt Đầu Đọc', cta2: "Tôi có mắc chứng khó đọc không? Làm bài kiểm tra",
     featureFonts: ['Phông Chữ cho Chứng Khó Đọc', 'OpenDyslexic, Comic Neue và nhiều hơn nữa'],
     featureFocus: ['Cửa Sổ Tiêu Điểm', 'Loại bỏ phân tâm từng dòng một'],
     featureTTS: ['Chuyển Văn Bản Thành Giọng Nói', 'Nghe với tô sáng từ theo thời gian thực'],
-    featureScreening: ['Bài Kiểm Tra Sàng Lọc', 'Đánh giá nguy cơ với 20 câu hỏi'],
+    featureScreening: ["Tôi có mắc chứng khó đọc không?", 'Đánh giá nguy cơ với 20 câu hỏi'],
     freeNote: 'Miễn phí · Không cần tài khoản · Tất cả xử lý trong trình duyệt của bạn',
     featureTranslate: ['Dịch & Định nghĩa', 'Chạm vào từ hoặc cụm từ bất kỳ để xem nghĩa, bản dịch và ví dụ trong 60+ ngôn ngữ'],
     featureLang: ['20 Ngôn ngữ', 'Giao diện đầy đủ, kiểm tra chứng khó đọc và kế hoạch đọc cá nhân hóa bằng ngôn ngữ của bạn'],

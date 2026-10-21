@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const es: Translations = {
   langName: 'Español', ocrLang: 'spa', ttsLangCode: 'es',
 
-  nav: { screening: 'Prueba de detección', resources: 'Recursos', loadText: 'Cargar nuevo texto', tagline: 'Lector para la Dislexia', lightMode: 'Modo claro', darkMode: 'Modo oscuro', preferencesBtn: 'Preferencias', allTests: 'Otros Tests' },
+  nav: { screening: "¿Tengo dislexia?", resources: 'Recursos', loadText: 'Cargar nuevo texto', tagline: 'Lector para la Dislexia', lightMode: 'Modo claro', darkMode: 'Modo oscuro', preferencesBtn: 'Preferencias', allTests: 'Otros Tests' },
 
   hero: {
     badge: 'Diseñado para que todos lean con comodidad',
     h1a: 'Lee con', h1b: 'confianza',
     sub: 'Personaliza cualquier texto según cómo funciona tu cerebro. Ajusta fuentes, espaciado, colores y usa nuestra ventana de enfoque para leer línea por línea.',
-    cta1: 'Empezar a leer', cta2: 'Hacer la prueba de detección',
+    cta1: 'Empezar a leer', cta2: "¿Tengo dislexia? Haz el test",
     featureFonts: ['Fuentes amigables para dislexia', 'OpenDyslexic, Comic Neue y más'],
     featureFocus: ['Ventana de enfoque', 'Bloquea distracciones línea por línea'],
     featureTTS: ['Texto a voz', 'Escucha con resaltado de palabras en vivo'],
-    featureScreening: ['Prueba de detección', 'Evaluación de riesgo de 20 preguntas'],
+    featureScreening: ["¿Tengo dislexia?", 'Evaluación de riesgo de 20 preguntas'],
     freeNote: 'Gratis · Sin cuenta · Todo el procesamiento ocurre en tu navegador',
     featureTranslate: ['Traducir y Definir', 'Toca cualquier palabra o frase para ver significado, traducción y ejemplos en 60+ idiomas'],
     featureLang: ['20 Idiomas', 'Interfaz completa, evaluación de dislexia y planes de lectura en tu idioma'],

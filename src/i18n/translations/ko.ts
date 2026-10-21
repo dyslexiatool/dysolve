@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const ko: Translations = {
   langName: '한국어', ocrLang: 'kor', ttsLangCode: 'ko',
 
-  nav: { screening: '선별 검사', resources: '자료', loadText: '새 텍스트 불러오기', tagline: '난독증 친화적 리더', lightMode: '라이트 모드', darkMode: '다크 모드', preferencesBtn: '환경설정', allTests: '다른 테스트' },
+  nav: { screening: "나는 난독증일까?", resources: '자료', loadText: '새 텍스트 불러오기', tagline: '난독증 친화적 리더', lightMode: '라이트 모드', darkMode: '다크 모드', preferencesBtn: '환경설정', allTests: '다른 테스트' },
 
   hero: {
     badge: '모든 사람이 편안하게 읽을 수 있도록 설계',
     h1a: '자신감 있게', h1b: '읽기',
     sub: '뇌의 작동 방식에 맞게 텍스트를 맞춤화하세요. 폰트, 간격, 색상을 조정하고 포커스 창을 사용하여 한 줄씩 읽어보세요.',
-    cta1: '읽기 시작', cta2: '선별 검사 받기',
+    cta1: '읽기 시작', cta2: "나는 난독증일까? 테스트하기",
     featureFonts: ['난독증 친화적 폰트', 'OpenDyslexic, Comic Neue 등'],
     featureFocus: ['포커스 창', '한 줄씩 집중해서 읽기'],
     featureTTS: ['텍스트 음성 변환', '실시간 단어 하이라이트와 함께 듣기'],
-    featureScreening: ['선별 검사', '20문항 위험 평가'],
+    featureScreening: ["나는 난독증일까?", '20문항 위험 평가'],
     freeNote: '무료 · 계정 불필요 · 모든 처리는 브라우저에서',
     featureTranslate: ['번역 & 정의', '단어나 구문을 탭하여 60개 이상 언어로 의미, 번역, 예문 즉시 확인'],
     featureLang: ['20개 언어', '완전한 UI, 난독증 선별검사, 맞춤형 독서 계획을 귀하의 언어로'],

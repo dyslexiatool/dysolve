@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const fr: Translations = {
   langName: 'Français', ocrLang: 'fra', ttsLangCode: 'fr',
 
-  nav: { screening: 'Test de dépistage', resources: 'Ressources', loadText: 'Charger un nouveau texte', tagline: 'Lecteur adapté à la dyslexie', lightMode: 'Mode clair', darkMode: 'Mode sombre', preferencesBtn: 'Préférences', allTests: 'Autres Tests' },
+  nav: { screening: "Suis-je dyslexique ?", resources: 'Ressources', loadText: 'Charger un nouveau texte', tagline: 'Lecteur adapté à la dyslexie', lightMode: 'Mode clair', darkMode: 'Mode sombre', preferencesBtn: 'Préférences', allTests: 'Autres Tests' },
 
   hero: {
     badge: 'Conçu pour que tout le monde lise confortablement',
     h1a: 'Lisez avec', h1b: 'confiance',
     sub: 'Personnalisez n\'importe quel texte selon le fonctionnement de votre cerveau. Ajustez les polices, l\'espacement, les couleurs et utilisez notre fenêtre de focus pour lire ligne par ligne.',
-    cta1: 'Commencer à lire', cta2: 'Faire le test de dépistage',
+    cta1: 'Commencer à lire', cta2: "Suis-je dyslexique ? Faites le test",
     featureFonts: ['Polices adaptées à la dyslexie', 'OpenDyslexic, Comic Neue et plus'],
     featureFocus: ['Fenêtre de focus', 'Bloquez les distractions ligne par ligne'],
     featureTTS: ['Synthèse vocale', 'Écoutez avec surbrillance des mots en direct'],
-    featureScreening: ['Test de dépistage', 'Évaluation des risques en 20 questions'],
+    featureScreening: ["Suis-je dyslexique ?", 'Évaluation des risques en 20 questions'],
     freeNote: 'Gratuit · Sans compte · Tout le traitement se fait dans votre navigateur',
     featureTranslate: ['Traduire et Définir', 'Appuyez sur un mot ou une phrase pour sa signification, traduction et exemples dans 60+ langues'],
     featureLang: ['20 Langues', 'Interface complète, dépistage de la dyslexie et plans de lecture personnalisés dans votre langue'],

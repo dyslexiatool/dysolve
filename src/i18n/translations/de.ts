@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const de: Translations = {
   langName: 'Deutsch', ocrLang: 'deu', ttsLangCode: 'de',
 
-  nav: { screening: 'Screening-Test', resources: 'Ressourcen', loadText: 'Neuen Text laden', tagline: 'Legasthenie-freundlicher Leser', lightMode: 'Heller Modus', darkMode: 'Dunkler Modus', preferencesBtn: 'Einstellungen', allTests: 'Andere Tests' },
+  nav: { screening: "Bin ich legasthen?", resources: 'Ressourcen', loadText: 'Neuen Text laden', tagline: 'Legasthenie-freundlicher Leser', lightMode: 'Heller Modus', darkMode: 'Dunkler Modus', preferencesBtn: 'Einstellungen', allTests: 'Andere Tests' },
 
   hero: {
     badge: 'Für alle konzipiert, um bequem zu lesen',
     h1a: 'Lesen mit', h1b: 'Selbstvertrauen',
     sub: 'Passen Sie jeden Text an die Funktionsweise Ihres Gehirns an. Schriften, Abstände, Farben anpassen und unser Fokusfenster zum zeilenweisen Lesen nutzen.',
-    cta1: 'Mit dem Lesen beginnen', cta2: 'Screening-Test durchführen',
+    cta1: 'Mit dem Lesen beginnen', cta2: "Bin ich legasthen? Zum Test",
     featureFonts: ['Legasthenie-freundliche Schriften', 'OpenDyslexic, Comic Neue und mehr'],
     featureFocus: ['Fokusfenster', 'Ablenkungen Zeile für Zeile ausblenden'],
     featureTTS: ['Text-zu-Sprache', 'Zuhören mit Live-Worthervorhebung'],
-    featureScreening: ['Screening-Test', '20-Fragen-Risikobewertung'],
+    featureScreening: ["Bin ich legasthen?", '20-Fragen-Risikobewertung'],
     freeNote: 'Kostenlos · Kein Konto erforderlich · Alle Verarbeitungen im Browser',
     featureTranslate: ['Übersetzen & Definieren', 'Tippe auf ein Wort oder eine Phrase für Bedeutung, Übersetzung und Beispiele in 60+ Sprachen'],
     featureLang: ['20 Sprachen', 'Vollständige Benutzeroberfläche, Legasthenie-Screening und Lesepläne in Ihrer Sprache'],

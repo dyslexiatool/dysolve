@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const zhCN: Translations = {
   langName: '中文（简体）', ocrLang: 'chi_sim', ttsLangCode: 'zh-CN',
 
-  nav: { screening: '筛查测试', resources: '资源', loadText: '加载新文本', tagline: '阅读障碍友好阅读器', lightMode: '浅色模式', darkMode: '深色模式', preferencesBtn: '首选项', allTests: '其他测试' },
+  nav: { screening: "我有阅读障碍吗？", resources: '资源', loadText: '加载新文本', tagline: '阅读障碍友好阅读器', lightMode: '浅色模式', darkMode: '深色模式', preferencesBtn: '首选项', allTests: '其他测试' },
 
   hero: {
     badge: '为每个人设计，让阅读更轻松',
     h1a: '自信地', h1b: '阅读',
     sub: '根据您的大脑工作方式自定义文本。调整字体、间距、颜色，使用专注窗口逐行阅读。',
-    cta1: '开始阅读', cta2: '进行筛查测试',
+    cta1: '开始阅读', cta2: "我有阅读障碍吗？立即测试",
     featureFonts: ['阅读障碍友好字体', 'OpenDyslexic、Comic Neue 等'],
     featureFocus: ['专注窗口', '逐行屏蔽干扰'],
     featureTTS: ['文字转语音', '实时单词高亮朗读'],
-    featureScreening: ['筛查测试', '20道题风险评估'],
+    featureScreening: ["我有阅读障碍吗？", '20道题风险评估'],
     freeNote: '免费使用 · 无需注册 · 所有处理在浏览器中完成',
     featureTranslate: ['翻译与释义', '点击任意词语或短语，获取60+语言的含义、翻译和例句'],
     featureLang: ['20种语言', '完整界面、阅读障碍筛查及个性化阅读计划，全面支持您的语言'],

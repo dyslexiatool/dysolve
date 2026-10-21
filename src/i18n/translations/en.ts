@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const en: Translations = {
   langName: 'English', ocrLang: 'eng', ttsLangCode: 'en',
 
-  nav: { screening: 'Screening Test', resources: 'Resources', loadText: 'Load New Text', tagline: 'Dyslexia-Friendly Reader', lightMode: 'Light mode', darkMode: 'Dark mode', preferencesBtn: 'Preferences', allTests: 'Other Tests' },
+  nav: { screening: "Am I Dyslexic?", resources: 'Resources', loadText: 'Load New Text', tagline: 'Dyslexia-Friendly Reader', lightMode: 'Light mode', darkMode: 'Dark mode', preferencesBtn: 'Preferences', allTests: 'Other Tests' },
 
   hero: {
     badge: 'Designed for Everyone to Read Comfortably',
     h1a: 'Read with', h1b: 'Confidence',
     sub: 'Customise any text to suit how your brain works. Adjust fonts, spacing, colours, and use our focus window to read one line at a time.',
-    cta1: 'Start Reading', cta2: 'Take the Screening Test',
+    cta1: 'Start Reading', cta2: "Am I Dyslexic? Take the Test",
     featureFonts: ['Dyslexia-Friendly Fonts', 'OpenDyslexic, Comic Neue & more'],
     featureFocus: ['Focus Window', 'Block out distractions line by line'],
     featureTTS: ['Text-to-Speech', 'Listen with live word highlighting'],
-    featureScreening: ['Screening Test', '20-question risk assessment'],
+    featureScreening: ["Am I Dyslexic?", '20-question risk assessment'],
     freeNote: 'Free to use · No account required · All processing happens in your browser',
     featureTranslate: ['Translate & Define', 'Tap any word or phrase for meaning, translation, and examples in 60+ languages'],
     featureLang: ['20 Languages', 'Full UI, dyslexia screening, and personalised reading plans in your language'],

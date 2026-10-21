@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const ja: Translations = {
   langName: '日本語', ocrLang: 'jpn', ttsLangCode: 'ja',
 
-  nav: { screening: 'スクリーニングテスト', resources: 'リソース', loadText: '新しいテキストを読み込む', tagline: 'ディスレクシア対応リーダー', lightMode: 'ライトモード', darkMode: 'ダークモード', preferencesBtn: '設定', allTests: '他のテスト' },
+  nav: { screening: "私はディスレクシア？", resources: 'リソース', loadText: '新しいテキストを読み込む', tagline: 'ディスレクシア対応リーダー', lightMode: 'ライトモード', darkMode: 'ダークモード', preferencesBtn: '設定', allTests: '他のテスト' },
 
   hero: {
     badge: 'すべての人が快適に読めるよう設計',
     h1a: '自信を持って', h1b: '読む',
     sub: 'あなたの脳の働き方に合わせてテキストをカスタマイズ。フォント、間隔、色を調整し、フォーカスウィンドウで1行ずつ読む。',
-    cta1: '読み始める', cta2: 'スクリーニングテストを受ける',
+    cta1: '読み始める', cta2: "私はディスレクシア？テストを受ける",
     featureFonts: ['ディスレクシア対応フォント', 'OpenDyslexic、Comic Neue など'],
     featureFocus: ['フォーカスウィンドウ', '1行ずつ集中して読む'],
     featureTTS: ['テキスト読み上げ', 'リアルタイムのワードハイライト付き'],
-    featureScreening: ['スクリーニングテスト', '20問のリスク評価'],
+    featureScreening: ["私はディスレクシア？", '20問のリスク評価'],
     freeNote: '無料 · アカウント不要 · すべての処理はブラウザ内で完結',
     featureTranslate: ['翻訳・定義', '単語やフレーズをタップして60+言語で意味・翻訳・例文を即表示'],
     featureLang: ['20言語対応', '完全UI、ディスレクシア検査、個別読書プランをあなたの言語で'],

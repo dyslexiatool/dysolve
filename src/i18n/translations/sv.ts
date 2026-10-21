@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const sv: Translations = {
   langName: 'Svenska', ocrLang: 'swe', ttsLangCode: 'sv',
 
-  nav: { screening: 'Screeningtest', resources: 'Resurser', loadText: 'Ladda Ny Text', tagline: 'Dyslexi-vänlig Läsare', lightMode: 'Ljust läge', darkMode: 'Mörkt läge', preferencesBtn: 'Inställningar', allTests: 'Andra Tester' },
+  nav: { screening: "Har jag dyslexi?", resources: 'Resurser', loadText: 'Ladda Ny Text', tagline: 'Dyslexi-vänlig Läsare', lightMode: 'Ljust läge', darkMode: 'Mörkt läge', preferencesBtn: 'Inställningar', allTests: 'Andra Tester' },
 
   hero: {
     badge: 'Designad för alla att läsa bekvämt',
     h1a: 'Läs med', h1b: 'Självförtroende',
     sub: 'Anpassa vilken text som helst efter hur din hjärna fungerar. Justera typsnitt, avstånd, färger och använd vårt fokusfönster för att läsa en rad i taget.',
-    cta1: 'Börja Läsa', cta2: 'Ta Screensningtestet',
+    cta1: 'Börja Läsa', cta2: "Har jag dyslexi? Gör testet",
     featureFonts: ['Dyslexi-vänliga Typsnitt', 'OpenDyslexic, Comic Neue med flera'],
     featureFocus: ['Fokusfönster', 'Blockera distraktioner rad för rad'],
     featureTTS: ['Text-till-tal', 'Lyssna med livemarkering av ord'],
-    featureScreening: ['Screeningtest', 'Riskbedömning med 20 frågor'],
+    featureScreening: ["Har jag dyslexi?", 'Riskbedömning med 20 frågor'],
     freeNote: 'Gratis att använda · Inget konto krävs · All bearbetning sker i din webbläsare',
     featureTranslate: ['Översätt & Definiera', 'Tryck på valfritt ord eller fras för omedelbar betydelse, översättning och exempel på 60+ språk'],
     featureLang: ['20 Språk', 'Fullständigt gränssnitt, dyslexi-screening och personliga läsplaner på ditt språk'],

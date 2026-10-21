@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const id: Translations = {
   langName: 'Bahasa Indonesia', ocrLang: 'ind', ttsLangCode: 'id',
 
-  nav: { screening: 'Tes Skrining', resources: 'Sumber Daya', loadText: 'Muat Teks Baru', tagline: 'Pembaca Ramah Disleksia', lightMode: 'Mode terang', darkMode: 'Mode gelap', preferencesBtn: 'Preferensi', allTests: 'Tes Lainnya' },
+  nav: { screening: "Apakah saya disleksia?", resources: 'Sumber Daya', loadText: 'Muat Teks Baru', tagline: 'Pembaca Ramah Disleksia', lightMode: 'Mode terang', darkMode: 'Mode gelap', preferencesBtn: 'Preferensi', allTests: 'Tes Lainnya' },
 
   hero: {
     badge: 'Dirancang agar semua orang bisa membaca dengan nyaman',
     h1a: 'Baca dengan', h1b: 'Percaya Diri',
     sub: 'Sesuaikan teks apa pun dengan cara kerja otak Anda. Atur font, spasi, warna, dan gunakan jendela fokus untuk membaca satu baris sekaligus.',
-    cta1: 'Mulai Membaca', cta2: 'Ikuti Tes Skrining',
+    cta1: 'Mulai Membaca', cta2: "Apakah saya disleksia? Ikuti tesnya",
     featureFonts: ['Font Ramah Disleksia', 'OpenDyslexic, Comic Neue, dan lainnya'],
     featureFocus: ['Jendela Fokus', 'Blokir gangguan baris per baris'],
     featureTTS: ['Teks-ke-Suara', 'Dengarkan dengan sorotan kata langsung'],
-    featureScreening: ['Tes Skrining', 'Penilaian risiko 20 pertanyaan'],
+    featureScreening: ["Apakah saya disleksia?", 'Penilaian risiko 20 pertanyaan'],
     freeNote: 'Gratis · Tidak perlu akun · Semua pemrosesan di browser Anda',
     featureTranslate: ['Terjemahkan & Definisikan', 'Ketuk kata atau frasa apa pun untuk arti, terjemahan, dan contoh dalam 60+ bahasa'],
     featureLang: ['20 Bahasa', 'Antarmuka lengkap, skrining disleksia, dan rencana membaca yang dipersonalisasi dalam bahasa Anda'],

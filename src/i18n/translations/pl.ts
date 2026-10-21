@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const pl: Translations = {
   langName: 'Polski', ocrLang: 'pol', ttsLangCode: 'pl',
 
-  nav: { screening: 'Test Przesiewowy', resources: 'Zasoby', loadText: 'Załaduj Nowy Tekst', tagline: 'Czytnik dla Dyslektyków', lightMode: 'Tryb jasny', darkMode: 'Tryb ciemny', preferencesBtn: 'Preferencje', allTests: 'Inne Testy' },
+  nav: { screening: "Czy mam dysleksję?", resources: 'Zasoby', loadText: 'Załaduj Nowy Tekst', tagline: 'Czytnik dla Dyslektyków', lightMode: 'Tryb jasny', darkMode: 'Tryb ciemny', preferencesBtn: 'Preferencje', allTests: 'Inne Testy' },
 
   hero: {
     badge: 'Zaprojektowane dla wygodnego czytania przez każdego',
     h1a: 'Czytaj z', h1b: 'Pewnością',
     sub: 'Dostosuj dowolny tekst do sposobu działania swojego mózgu. Reguluj czcionki, odstępy, kolory i używaj okna fokusa, aby czytać wiersz po wierszu.',
-    cta1: 'Zacznij Czytać', cta2: 'Zrób Test Przesiewowy',
+    cta1: 'Zacznij Czytać', cta2: "Czy mam dysleksję? Zrób test",
     featureFonts: ['Czcionki przyjazne dysleksji', 'OpenDyslexic, Comic Neue i więcej'],
     featureFocus: ['Okno Fokusa', 'Blokuj rozproszenia wiersz po wierszu'],
     featureTTS: ['Tekst na Mowę', 'Słuchaj z podświetlaniem słów na żywo'],
-    featureScreening: ['Test Przesiewowy', 'Ocena ryzyka z 20 pytaniami'],
+    featureScreening: ["Czy mam dysleksję?", 'Ocena ryzyka z 20 pytaniami'],
     freeNote: 'Bezpłatne · Bez konta · Całe przetwarzanie w przeglądarce',
     featureTranslate: ['Przetłumacz i Zdefiniuj', 'Dotknij dowolnego słowa lub frazy, aby uzyskać znaczenie, tłumaczenie i przykłady w 60+ językach'],
     featureLang: ['20 Języków', 'Pełny interfejs, screening dysleksji i spersonalizowane plany czytania w Twoim języku'],

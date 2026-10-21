@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const pt: Translations = {
   langName: 'Português', ocrLang: 'por', ttsLangCode: 'pt',
 
-  nav: { screening: 'Teste de Triagem', resources: 'Recursos', loadText: 'Carregar Novo Texto', tagline: 'Leitor Amigável para Dislexia', lightMode: 'Modo claro', darkMode: 'Modo escuro', preferencesBtn: 'Preferências', allTests: 'Outros Testes' },
+  nav: { screening: "Eu tenho dislexia?", resources: 'Recursos', loadText: 'Carregar Novo Texto', tagline: 'Leitor Amigável para Dislexia', lightMode: 'Modo claro', darkMode: 'Modo escuro', preferencesBtn: 'Preferências', allTests: 'Outros Testes' },
 
   hero: {
     badge: 'Projetado para Todos Lerem Confortavelmente',
     h1a: 'Leia com', h1b: 'Confiança',
     sub: 'Personalize qualquer texto para se adaptar ao seu modo de pensar. Ajuste fontes, espaçamento, cores e use a janela de foco para ler uma linha por vez.',
-    cta1: 'Começar a Ler', cta2: 'Fazer o Teste de Triagem',
+    cta1: 'Começar a Ler', cta2: "Eu tenho dislexia? Faça o teste",
     featureFonts: ['Fontes para Dislexia', 'OpenDyslexic, Comic Neue e mais'],
     featureFocus: ['Janela de Foco', 'Bloqueie distrações linha por linha'],
     featureTTS: ['Texto para Fala', 'Ouça com destaque de palavras em tempo real'],
-    featureScreening: ['Teste de Triagem', 'Avaliação de risco com 20 perguntas'],
+    featureScreening: ["Eu tenho dislexia?", 'Avaliação de risco com 20 perguntas'],
     freeNote: 'Gratuito · Sem conta necessária · Todo processamento no seu navegador',
     featureTranslate: ['Traduzir e Definir', 'Toque em qualquer palavra ou frase para ver significado, tradução e exemplos em 60+ idiomas'],
     featureLang: ['20 Idiomas', 'Interface completa, triagem de dislexia e planos de leitura personalizados no seu idioma'],

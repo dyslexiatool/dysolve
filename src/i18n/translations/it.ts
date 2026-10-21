@@ -3,17 +3,17 @@ import type { Translations } from '../types'
 export const it: Translations = {
   langName: 'Italiano', ocrLang: 'ita', ttsLangCode: 'it',
 
-  nav: { screening: 'Test di screening', resources: 'Risorse', loadText: 'Carica nuovo testo', tagline: 'Lettore per Dislessici', lightMode: 'Modalità chiara', darkMode: 'Modalità scura', preferencesBtn: 'Preferenze', allTests: 'Altri Test' },
+  nav: { screening: "Sono dislessico?", resources: 'Risorse', loadText: 'Carica nuovo testo', tagline: 'Lettore per Dislessici', lightMode: 'Modalità chiara', darkMode: 'Modalità scura', preferencesBtn: 'Preferenze', allTests: 'Altri Test' },
 
   hero: {
     badge: 'Progettato perché tutti leggano comodamente',
     h1a: 'Leggi con', h1b: 'fiducia',
     sub: 'Personalizza qualsiasi testo in base al funzionamento del tuo cervello. Regola font, spaziatura, colori e usa la nostra finestra di messa a fuoco per leggere riga per riga.',
-    cta1: 'Inizia a leggere', cta2: 'Fai il test di screening',
+    cta1: 'Inizia a leggere', cta2: "Sono dislessico? Fai il test",
     featureFonts: ['Font per dislessici', 'OpenDyslexic, Comic Neue e altri'],
     featureFocus: ['Finestra di messa a fuoco', 'Blocca le distrazioni riga per riga'],
     featureTTS: ['Sintesi vocale', 'Ascolta con evidenziazione delle parole in tempo reale'],
-    featureScreening: ['Test di screening', 'Valutazione del rischio con 20 domande'],
+    featureScreening: ["Sono dislessico?", 'Valutazione del rischio con 20 domande'],
     freeNote: 'Gratuito · Senza account · Tutto il trattamento avviene nel tuo browser',
     featureTranslate: ['Traduci e Definisci', 'Tocca una parola o frase per significato, traduzione ed esempi in 60+ lingue'],
     featureLang: ['20 Lingue', 'Interfaccia completa, screening per dislessia e piani di lettura personalizzati nella tua lingua'],
